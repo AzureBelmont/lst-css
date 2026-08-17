@@ -2244,23 +2244,79 @@ html body .torrent-search-row__name a{
   color: var(--at-text) !important;
 }
 
-html body .torrent-search-row__action--download,
-html body .torrent-search-row__action--download:hover,
-html body [class*="__action--download"]{
-  background-color: var(--at-accent-faint) !important;
+html body .torrent-search-row__action--download{
+  background-color: var(--at-bg3) !important;
   background-image: none !important;
+  border-color: var(--at-border) !important;
+}
+html body .torrent-search-row__action--download i{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-search-row__action--download:hover{
+  background-color: var(--at-accent-faint) !important;
   border-color: var(--at-accent) !important;
 }
-html body .torrent-search-row__action--download i,
-html body [class*="__action--download"] i{
+html body .torrent-search-row__action--download:hover i{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-activity-indicator--seeding,
+html body .torrent-search-row__stat--seeders.torrent-activity-indicator--seeding,
+html body [class*="activity-indicator--seeding"]{
+  background-color: rgba(48,209,88,0.14) !important;
+  background-image: none !important;
+  border-color: rgba(48,209,88,0.35) !important;
+  color: var(--at-green) !important;
+}
+html body .torrent-activity-indicator--leeching,
+html body [class*="activity-indicator--leeching"]{
+  background-color: rgba(255,69,58,0.14) !important;
+  background-image: none !important;
+  border-color: rgba(255,69,58,0.35) !important;
+  color: var(--at-red) !important;
 }
 html body .votes__like,
 html body .votes__dislike{
   background-color: transparent !important;
   background-image: none !important;
   border-color: transparent !important;
+}
+html body .votes__like:hover{
+  background-color: rgba(48,209,88,0.14) !important;
+  border-color: transparent !important;
+}
+html body .votes__dislike:hover{
+  background-color: rgba(255,69,58,0.14) !important;
+  border-color: transparent !important;
+}
+html body .votes__like:hover,
+html body .votes__like:hover i,
+html body .votes__like:hover .votes__like-count{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+}
+html body .votes__dislike:hover,
+html body .votes__dislike:hover i,
+html body .votes__dislike:hover .votes__dislike-count{
+  color: var(--at-red) !important;
+  -webkit-text-fill-color: var(--at-red) !important;
+}
+html body .post__permalink,
+html body .post__toolbar-item a,
+html body .post__toolbar-item button{
+  color: var(--at-text2) !important;
+}
+html body .post__permalink:hover,
+html body .post__permalink:hover i,
+html body .post__toolbar-item a:hover,
+html body .post__toolbar-item a:hover i,
+html body .post__toolbar-item button:not(.votes__like):not(.votes__dislike):hover,
+html body .post__toolbar-item button:not(.votes__like):not(.votes__dislike):hover i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
 }
 
 html body .post__tip-input,
@@ -2410,9 +2466,9 @@ html body main [class*="__sort"],
 html body main th a,
 html body main th span,
 html body main th i,
-html body main [class*="__header"] a,
-html body main [class*="__header"] span:not([class*="badge"]),
-html body main [class*="__header"] i{
+html body main [class*="__header"] > a,
+html body main [class*="__header"] > span:not([class*="badge"]),
+html body main [class*="__header"] > i{
   color: var(--at-text2) !important;
   -webkit-text-fill-color: var(--at-text2) !important;
 }
