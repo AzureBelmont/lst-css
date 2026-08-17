@@ -2141,7 +2141,6 @@ html body .torrent-search-row__resolution,
 html body .torrent-search-row__media-label,
 html body .torrent-search-row__flag-more,
 html body .torrent-search-row__category,
-html body .torrent-search-row__stat,
 html body .torrent-badges__label,
 html body [class^="torrent-search-row__"][class$="-label"]{
   color: var(--at-text2) !important;
@@ -2150,6 +2149,59 @@ html body [class^="torrent-search-row__"][class$="-label"]{
 html body .torrent-search-row__name,
 html body .torrent-search-row__name a{
   color: var(--at-text) !important;
+}
+
+html body .torrent-search-row__action--download,
+html body .torrent-search-row__action--download:hover,
+html body [class*="__action--download"]{
+  background-color: var(--at-accent-faint) !important;
+  background-image: none !important;
+  border-color: var(--at-accent) !important;
+}
+html body .torrent-search-row__action--download i,
+html body [class*="__action--download"] i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .votes__like,
+html body .votes__dislike{
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+
+html body .post__tip-input,
+html body input.post__tip-input,
+html body .post__tip-input:focus{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+  caret-color: var(--at-text) !important;
+}
+
+html body .torrent-search-row__stat--seeders,
+html body .torrent-search-row__stat--seeders i,
+html body .torrent-meta-bar__stat--seeders{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+}
+html body .torrent-search-row__stat--leechers,
+html body .torrent-search-row__stat--leechers i,
+html body .torrent-meta-bar__stat--leechers{
+  color: var(--at-red) !important;
+  -webkit-text-fill-color: var(--at-red) !important;
+}
+html body .torrent-search-row__stat--completed,
+html body .torrent-search-row__stat--completed i,
+html body .torrent-search-row__stat--age,
+html body .torrent-search-row__stat--size{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-results__header,
+html body .torrent-results__header span,
+html body .torrent-results__count,
+html body [class*="__results-count"]{
+  color: var(--at-text2) !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

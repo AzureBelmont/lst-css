@@ -1334,7 +1334,7 @@ html body .alert--success,
 html body .chatV2__presence,
 html body .chatV2__statusDot,
 html body [class*="--online"]{
-  color: var(--at-green) !important;
+  color: var(--k-matcha) !important;
 }
 html body .forum-hero__stat-value,
 html body .topic-listing__link,
@@ -1390,8 +1390,8 @@ html body .post__author-title{
 html body .chatV2__presence,
 html body .chatV2__statusDot,
 html body .chatV2__columnHeaderDot{
-  color: var(--at-green) !important;
-  background-color: var(--at-green) !important;
+  color: var(--k-matcha) !important;
+  background-color: var(--k-matcha) !important;
 }
 
 html body .top-nav__dropdown ul li a i,
@@ -1785,7 +1785,6 @@ html body .torrent-search-row__resolution,
 html body .torrent-search-row__media-label,
 html body .torrent-search-row__flag-more,
 html body .torrent-search-row__category,
-html body .torrent-search-row__stat,
 html body .torrent-badges__label,
 html body [class^="torrent-search-row__"][class$="-label"]{
   color: var(--k-text2) !important;
@@ -1794,6 +1793,59 @@ html body [class^="torrent-search-row__"][class$="-label"]{
 html body .torrent-search-row__name,
 html body .torrent-search-row__name a{
   color: var(--k-text) !important;
+}
+
+html body .torrent-search-row__action--download,
+html body .torrent-search-row__action--download:hover,
+html body [class*="__action--download"]{
+  background-color: var(--k-accent-faint) !important;
+  background-image: none !important;
+  border-color: var(--k-accent) !important;
+}
+html body .torrent-search-row__action--download i,
+html body [class*="__action--download"] i{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
+html body .votes__like,
+html body .votes__dislike{
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+
+html body .post__tip-input,
+html body input.post__tip-input,
+html body .post__tip-input:focus{
+  color: var(--k-text) !important;
+  -webkit-text-fill-color: var(--k-text) !important;
+  caret-color: var(--k-text) !important;
+}
+
+html body .torrent-search-row__stat--seeders,
+html body .torrent-search-row__stat--seeders i,
+html body .torrent-meta-bar__stat--seeders{
+  color: var(--k-matcha) !important;
+  -webkit-text-fill-color: var(--k-matcha) !important;
+}
+html body .torrent-search-row__stat--leechers,
+html body .torrent-search-row__stat--leechers i,
+html body .torrent-meta-bar__stat--leechers{
+  color: var(--k-torii) !important;
+  -webkit-text-fill-color: var(--k-torii) !important;
+}
+html body .torrent-search-row__stat--completed,
+html body .torrent-search-row__stat--completed i,
+html body .torrent-search-row__stat--age,
+html body .torrent-search-row__stat--size{
+  color: var(--k-text2) !important;
+  -webkit-text-fill-color: var(--k-text2) !important;
+}
+html body .torrent-results__header,
+html body .torrent-results__header span,
+html body .torrent-results__count,
+html body [class*="__results-count"]{
+  color: var(--k-text2) !important;
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

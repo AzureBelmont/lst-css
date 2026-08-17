@@ -1158,7 +1158,7 @@ html body .quick-search{ pointer-events: none !important; }
 html body .quick-search__inputs,
 html body .quick-search__results{ pointer-events: auto !important; }
 
-html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
+html body .quick-search__inputs{ background: rgba(0,0,0,0.05) !important; background-color: rgba(0,0,0,0.05) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
 html body .top-nav__dropdown-menu,
 html body .top-nav__dropdown > ul,
@@ -1450,13 +1450,13 @@ html body .chatV2__emptyIcon{
   color: var(--at-text2) !important;
 }
 html body .blackjack-chat__input{
-  background-color: rgba(255,255,255,0.06) !important;
+  background-color: rgba(0,0,0,0.05) !important;
   border: 1px solid var(--at-border) !important;
   color: var(--at-text) !important;
 }
 
 html body .imgbb-button{
-  background-color: rgba(255,255,255,0.06) !important;
+  background-color: rgba(0,0,0,0.05) !important;
   background-image: none !important;
   border: 1px solid var(--at-border) !important;
   color: var(--at-text) !important;
@@ -1924,7 +1924,7 @@ html body .torrent-upload-actions{
 html body div.form__group > input.form__text,
 html body div.form__group > textarea.form__textarea,
 html body div.form__group > select.form__select{
-  background-color: rgba(255,255,255,0.06) !important;
+  background-color: rgba(0,0,0,0.05) !important;
   border: 1px solid var(--at-border) !important;
   border-radius: var(--at-radius) !important;
 }
@@ -2156,7 +2156,7 @@ html body .post__toolbar{
   box-shadow: none !important;
 }
 html body .post__tip-input{
-  background-color: rgba(255,255,255,0.06) !important;
+  background-color: rgba(0,0,0,0.05) !important;
   border: 1px solid var(--at-border) !important;
   border-radius: 6px !important;
   box-shadow: none !important;
@@ -2237,7 +2237,6 @@ html body .torrent-search-row__resolution,
 html body .torrent-search-row__media-label,
 html body .torrent-search-row__flag-more,
 html body .torrent-search-row__category,
-html body .torrent-search-row__stat,
 html body .torrent-badges__label,
 html body [class^="torrent-search-row__"][class$="-label"]{
   color: var(--at-text2) !important;
@@ -2246,6 +2245,59 @@ html body [class^="torrent-search-row__"][class$="-label"]{
 html body .torrent-search-row__name,
 html body .torrent-search-row__name a{
   color: var(--at-text) !important;
+}
+
+html body .torrent-search-row__action--download,
+html body .torrent-search-row__action--download:hover,
+html body [class*="__action--download"]{
+  background-color: var(--at-accent-faint) !important;
+  background-image: none !important;
+  border-color: var(--at-accent) !important;
+}
+html body .torrent-search-row__action--download i,
+html body [class*="__action--download"] i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .votes__like,
+html body .votes__dislike{
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+
+html body .post__tip-input,
+html body input.post__tip-input,
+html body .post__tip-input:focus{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+  caret-color: var(--at-text) !important;
+}
+
+html body .torrent-search-row__stat--seeders,
+html body .torrent-search-row__stat--seeders i,
+html body .torrent-meta-bar__stat--seeders{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+}
+html body .torrent-search-row__stat--leechers,
+html body .torrent-search-row__stat--leechers i,
+html body .torrent-meta-bar__stat--leechers{
+  color: var(--at-red) !important;
+  -webkit-text-fill-color: var(--at-red) !important;
+}
+html body .torrent-search-row__stat--completed,
+html body .torrent-search-row__stat--completed i,
+html body .torrent-search-row__stat--age,
+html body .torrent-search-row__stat--size{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-results__header,
+html body .torrent-results__header span,
+html body .torrent-results__count,
+html body [class*="__results-count"]{
+  color: var(--at-text2) !important;
 }
 
 
@@ -2280,6 +2332,107 @@ html body main [class*="__count"],
 html body main [class*="__name"],
 html body main [class*="__title"]:not([class*="skeleton"]){
   color: var(--at-text) !important;
+}
+
+html body main dt,
+html body main dd:not([class]),
+html body main strong,
+html body main small,
+html body main span:not([class]):not([style]),
+html body main p:not([class]),
+html body main li:not([class]),
+html body main figcaption,
+html body main label:not([class]){
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+
+html body .torrent-search-row__action,
+html body .torrent-search-row__action i,
+html body [class*="__action"]:not([class*="--primary"]) > i,
+html body [class*="__actions"] > button > i,
+html body [class*="__actions"] > a > i,
+html body .post__toolbar i,
+html body .post__toolbar-overflow i,
+html body [class*="__toolbar"] i:not([class*="text-"]){
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-search-row__action:hover,
+html body .torrent-search-row__action:hover i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .torrent-search-row__action{
+  background-color: var(--at-bg3) !important;
+  border-color: var(--at-border) !important;
+}
+
+html body [class*="chatV2__settings"],
+html body [class*="chatV2__settings"] > *,
+html body [class*="chatV2__settings"] span,
+html body [class*="chatV2__settings"] p,
+html body [class*="chatV2__settings"] div,
+html body [class*="chatV2__settings"] label,
+html body [class*="chatV2__settings"] h1,
+html body [class*="chatV2__settings"] h2,
+html body [class*="chatV2__settings"] h3,
+html body [class*="chatV2__settings"] h4{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+html body main [class*="Desc"],
+html body main [class*="Hint"],
+html body main [class*="Help"],
+html body main [class*="Subtitle"],
+html body main [class*="Caption"],
+html body [class*="chatV2__"][class*="Desc"],
+html body [class*="chatV2__"][class*="Hint"],
+html body [class*="chatV2__"][class*="Sub"],
+html body [class*="chatV2__"][class*="Meta"],
+html body [class*="chatV2__settings"] [class*="Desc"],
+html body [class*="chatV2__settings"] [class*="Hint"],
+html body [class*="chatV2__settings"] [class*="Sub"]{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body main [class*="Title"],
+html body main [class*="Name"],
+html body main [class*="Value"],
+html body [class*="chatV2__settings"] [class*="Title"]{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+
+html body main th,
+html body main thead td,
+html body main .data-table th,
+html body main [class*="__header"]:not([class*="hero"]),
+html body main [class*="-header"]:not([class*="hero"]),
+html body main [class*="__sort"],
+html body main th a,
+html body main th span,
+html body main th i,
+html body main [class*="__header"] a,
+html body main [class*="__header"] span:not([class*="badge"]),
+html body main [class*="__header"] i{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+
+html body .torrent-wasm-upload__drop-text,
+html body .torrent-wasm-upload__drop-inner,
+html body .torrent-wasm-upload__drop-inner *:not(i),
+html body [class*="drop-text"],
+html body [class*="__dropzone"] span,
+html body [class*="__dropzone"] p,
+html body [class*="__drop"] span,
+html body [class*="__drop"] p,
+html body [class*="__empty"],
+html body [class*="__empty"] span,
+html body [class*="__empty"] p{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
