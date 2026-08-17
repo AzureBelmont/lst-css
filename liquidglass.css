@@ -2473,3 +2473,27 @@ html body .post__author-posts > :last-child{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
 }
+
+html body .chatV2__settingsNavItem.is-active,
+html body .chatV2__settingsNavItem[aria-selected="true"]{
+  box-shadow: inset 0 0 0 1px var(--at-accent) !important;
+}
+
+html body .post__topic,
+html body .post__topic a,
+html body .post__topic a:visited,
+html body .forum-posts__header .post__topic a{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body main i.fa-comments,
+html body main i.fa-layer-group,
+html body main i.fa-folder,
+html body main i.fa-folder-open,
+html body .panel__heading i.fa-comments,
+html body .forum-posts__header i,
+html body .torrent-comments__header i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
