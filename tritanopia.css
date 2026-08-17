@@ -1,10 +1,10 @@
 /* ==========================================================
    Tritanopia colorblind overlay (blue-yellow) — LST
-   Overlay. Stacks on top of any LST theme.
+   Greens become blue, reds stay red. Stacks on the Galactic base.
 
    Author  AzureBelmont
    Repo    github.com/AzureBelmont/lst-css
-   Version 1.0
+   Version 1.1
 
    Base    Site style must be set to "Galactic".
    Install Settings -> General -> External CSS Stylesheet
@@ -14,17 +14,116 @@
   --color-green:             #58a6ff;
   --color-light-green:       #79c0ff;
   --color-dark-green:        #1f6feb;
+  --color-red:               #f85149;
+  --color-light-red:         #ff7b72;
   --torrent-row-seeders-fg:  #58a6ff;
+  --torrent-row-leechers-fg: #f85149;
+  --at-green:                #58a6ff;
+  --at-red:                  #f85149;
+  --ui-success-fg:           #58a6ff;
+  --ui-danger-fg:            #f85149;
 }
 
-html body .text-green{ color: #58a6ff !important; }
-
+html body .text-green,
+html body .text-success,
+html body .badge--success,
+html body .torrent-search-row__stat.torrent-search-row__stat--seeders,
+html body .torrent-search-row__stat.torrent-search-row__stat--seeders i,
+html body .torrent-search-row__stat.torrent-search-row__stat--seeders span,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--seeders,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--seeders i,
+html body .torrent-badges__item.torrent-badges__item--seeding,
+html body .torrent-badges__item.torrent-badges__item--seeding i,
+html body .torrent-badges__item.torrent-badges__item--freeleech,
+html body .torrent-badges__item.torrent-badges__item--freeleech i,
+html body .torrent-badges__item.torrent-badges__item--freeleech .torrent-badges__label,
+html body .torrent-badges__item.torrent-badges__item--highspeed,
+html body .torrent-badges__item.torrent-badges__item--highspeed i,
+html body .torrent-activity-indicator.torrent-activity-indicator--seeding,
+html body .torrent-activity-indicator.torrent-activity-indicator--seeding i,
+html body .votes__like-icon,
+html body .votes__like-count,
+html body .votes__like:hover,
+html body .votes__like:hover i,
+html body .chatV2__meStatusDot,
+html body .chatV2__connectionDot,
+html body [class*="chatV2__"][class*="StatusDot"],
+html body .top-nav__ratio-bar i.fa-arrow-up,
+html body .top-nav__ratio-bar i.fa-upload,
+html body .profile-stat-card--upload i,
+html body .profile-mini-stat--upload i,
+html body td.torrent-search--list__seeders a,
+html body .user-torrents__seedtime span.text-green,
+html body .peer-row__seeder,
+html body .peer-list__seeder,
+html body .request-row__filled,
+html body .bbcode-rendered__note--success{
+  color: #58a6ff !important;
+  -webkit-text-fill-color: #58a6ff !important;
+}
+html body .text-red,
+html body .text-danger,
+html body .badge--danger,
+html body .torrent-search-row__stat.torrent-search-row__stat--leechers,
+html body .torrent-search-row__stat.torrent-search-row__stat--leechers i,
+html body .torrent-search-row__stat.torrent-search-row__stat--leechers span,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--leechers,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--leechers i,
+html body .torrent-badges__item.torrent-badges__item--thanks,
+html body .torrent-badges__item.torrent-badges__item--thanks i,
+html body .torrent-badges__item.torrent-badges__item--sticky,
+html body .torrent-badges__item.torrent-badges__item--sticky i,
+html body .torrent-badges__item.torrent-badges__item--personal,
+html body .torrent-badges__item.torrent-badges__item--personal i,
+html body .torrent-badges__item.torrent-badges__item--featured,
+html body .torrent-badges__item.torrent-badges__item--featured i,
+html body .torrent-activity-indicator.torrent-activity-indicator--leeching,
+html body .torrent-activity-indicator.torrent-activity-indicator--leeching i,
+html body .votes__dislike-icon,
+html body .votes__dislike-count,
+html body .votes__dislike:hover,
+html body .votes__dislike:hover i,
+html body .top-nav__ratio-bar i.fa-arrow-down,
+html body .top-nav__ratio-bar i.fa-download,
+html body .profile-stat-card--download i,
+html body .profile-mini-stat--download i,
+html body td.torrent-search--list__leechers a,
+html body .user-torrents__seedtime span.text-red,
+html body .peer-row__leecher,
+html body .peer-list__leecher,
+html body .settings-toolbar__btn--danger,
+html body .settings-toolbar__btn--danger i,
+html body .bbcode-rendered__alert{
+  color: #f85149 !important;
+  -webkit-text-fill-color: #f85149 !important;
+}
+html body .torrent-search-row__stat--seeders.torrent-search-row__stat--active,
+html body .torrent-search-row__stat.torrent-search-row__stat--active,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--seeders,
+html body .torrent-badges__item.torrent-badges__item--freeleech,
+html body .torrent-badges__item.torrent-badges__item--seeding,
+html body .torrent-badges__item.torrent-badges__item--highspeed{
+  background-color: rgba(88,166,255,0.15) !important;
+  border-color: rgba(88,166,255,0.45) !important;
+}
+html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active,
+html body .torrent-meta-bar__stat.torrent-meta-bar__stat--leechers,
+html body .torrent-badges__item.torrent-badges__item--sticky,
+html body .torrent-badges__item.torrent-badges__item--personal,
+html body .torrent-badges__item.torrent-badges__item--thanks,
+html body .torrent-badges__item.torrent-badges__item--featured{
+  background-color: rgba(248,81,73,0.15) !important;
+  border-color: rgba(248,81,73,0.45) !important;
+}
 main.page__user-torrents--index td.user-torrents__seedtime span.text-red::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; content: "\f00d\00a0"; }
 main.page__user-torrents--index td.user-torrents__seedtime span.text-green::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; content: "\f00c\00a0"; }
-
 html body td.torrent-search--list__seeders a::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; font-size: 0.8em; content: "\f062\00a0"; }
 html body td.torrent-search--list__leechers a::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; font-size: 0.8em; content: "\f063\00a0"; }
-
-html body .votes__like-icon, html body .votes__like-count{ color: #58a6ff !important; }
-
-html body .top-nav__ratio-bar i.fa-arrow-up, html body .top-nav__ratio-bar i.fa-upload{ color: #58a6ff !important; }
+html body .user-tag__link,
+html body a[class*="user-tag"],
+html body [class*="user-tag"] a,
+html body [class*="user-tag"] i,
+html body .chatV2__author a,
+html body .chatV2__author i{
+  -webkit-text-fill-color: currentColor !important;
+}
