@@ -2138,4 +2138,20 @@ html body [class*="torrent-"]{
   --torrent-accent-rgb: 255,121,198;
 }
 
+html body .torrent-search-row__type,
+html body .torrent-search-row__resolution,
+html body .torrent-search-row__media-label,
+html body .torrent-search-row__flag-more,
+html body .torrent-search-row__category,
+html body .torrent-search-row__stat,
+html body .torrent-badges__label,
+html body [class^="torrent-search-row__"][class$="-label"]{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-search-row__name,
+html body .torrent-search-row__name a{
+  color: var(--at-text) !important;
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

@@ -2229,4 +2229,54 @@ html body [class*="torrent-"]{
   --torrent-accent-rgb: 100,74,201;
 }
 
+html body .torrent-search-row__type,
+html body .torrent-search-row__resolution,
+html body .torrent-search-row__media-label,
+html body .torrent-search-row__flag-more,
+html body .torrent-search-row__category,
+html body .torrent-search-row__stat,
+html body .torrent-badges__label,
+html body [class^="torrent-search-row__"][class$="-label"]{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-search-row__name,
+html body .torrent-search-row__name a{
+  color: var(--at-text) !important;
+}
+
+
+html body main [class*="__help"],
+html body main [class*="__hint"],
+html body main [class*="__description"],
+html body main [class*="__subtitle"],
+html body main [class*="__label"],
+html body main [class*="-label"],
+html body main [class*="__note"],
+html body main [class*="__meta"],
+html body main [class*="__caption"],
+html body main [class*="skeleton__"],
+html body main [class*="__placeholder"],
+html body main [class*="__muted"],
+html body .settings-section__description,
+html body .general-prefs-panel__help,
+html body .general-prefs-subsection__label,
+html body .general-icon-picker__label,
+html body .general-homepage-editor__help,
+html body .general-homepage-skeleton__title,
+html body .general-homepage-skeleton__hint,
+html body .torrent-search-row__type,
+html body .torrent-search-row__resolution,
+html body .torrent-search-row__media-label,
+html body .torrent-search-row__flag-more{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body main [class*="__value"],
+html body main [class*="__count"],
+html body main [class*="__name"],
+html body main [class*="__title"]:not([class*="skeleton"]){
+  color: var(--at-text) !important;
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

@@ -211,7 +211,7 @@ td[class*="torrent-search--list__"] { background-color: transparent !important; 
 .data-table td { }
 .af-row { background-color: var(--k-bg2) !important; border-bottom: 1px solid var(--k-border-faint) !important; transition: background .15s !important; }
 .af-row:hover { background-color: var(--k-accent-faint) !important; box-shadow: inset 3px 0 0 var(--k-accent) !important; }
-tr.torrent-search--list__sticky-row { background-color: var(--k-accent-faint) !important; border-left: 3px solid var(--k-accent) !important; box-shadow: inset 3px 0 0 var(--k-accent) !important; }
+tr.torrent-search--list__sticky-row { background-color: transparent !important; border-left: 3px solid var(--k-accent) !important; box-shadow: inset 3px 0 0 var(--k-accent) !important; }
 tr.torrent-search--list__sticky-row td { background-color: transparent !important; }
 tr.torrent-search--list__sticky-row .torrent-search--list__name > a:first-child { color: var(--k-text) !important; }
 .torrent-search--list__name > a:first-child { color: var(--k-text) !important; font-weight: 500 !important; }
@@ -1778,6 +1778,22 @@ html body [class*="torrent-"]{
   --ticket-accent-rgb: 244,170,202;
   --report-accent-rgb: 244,170,202;
   --torrent-accent-rgb: 244,170,202;
+}
+
+html body .torrent-search-row__type,
+html body .torrent-search-row__resolution,
+html body .torrent-search-row__media-label,
+html body .torrent-search-row__flag-more,
+html body .torrent-search-row__category,
+html body .torrent-search-row__stat,
+html body .torrent-badges__label,
+html body [class^="torrent-search-row__"][class$="-label"]{
+  color: var(--k-text2) !important;
+  -webkit-text-fill-color: var(--k-text2) !important;
+}
+html body .torrent-search-row__name,
+html body .torrent-search-row__name a{
+  color: var(--k-text) !important;
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
