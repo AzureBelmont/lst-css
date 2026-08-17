@@ -497,9 +497,6 @@ h2.meta__heading { margin-top: 0 !important; margin-bottom: 6px !important; }
 .torrent-icons img, .torrent-icons__vision img { display: inline-block !important; vertical-align: middle !important; height: 14px !important; width: auto !important; filter: invert(1) brightness(0.8) !important; }
 tr.torrent-search--list__sticky-row:hover td { background-color: transparent !important; }
 tr.torrent-search--list__sticky-row:hover { background-color: rgba(244,170,202,0.10) !important; }
-.donation-packages { gap: 16px !important; }
-.donation-package__wrapper { max-width: calc(25% - 16px) !important; padding: 20px 12px !important; background-color: var(--k-bg3) !important; border: 1px solid rgba(244,170,202,0.55) !important; border-radius: var(--k-radius) !important; transition: border-color .2s, box-shadow .2s !important; }
-.donation-package__wrapper:hover { border-color: var(--k-accent) !important; box-shadow: 0 0 14px rgba(244,170,202,0.25) !important; }
 html body .panel__header select, html body .panel__header .form__select { min-width: 110px !important; }
 td.data-table__bon-taxed { display: table-cell !important; vertical-align: middle !important; }
 td.data-table__bon-taxed i.fa-percent { margin-left: 4px !important; }
@@ -2048,6 +2045,22 @@ html body .bets-table__name-col{
 }
 html body .bets-table tbody tr:hover td{
   background-color: var(--k-accent-faint) !important;
+}
+
+html body .raffle-lobby__balance,
+html body .raffle-lobby__balance span,
+html body .raffle-lobby__balance i{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
+html body .raffle-stat-card__value{
+  font-size: 21px !important;
+}
+
+html body .donation-sidebar__heading{
+  letter-spacing: normal !important;
+  padding-left: 5px !important;
+  font-size: 18px !important;
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

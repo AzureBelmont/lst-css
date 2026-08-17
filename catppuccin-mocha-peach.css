@@ -750,21 +750,6 @@ ul.torrent__tags .torrent-icons {
   filter: none !important;
   font-weight: 600 !important;
 }
-.donation-packages {
-  gap: 16px !important;
-}
-.donation-package__wrapper {
-  max-width: calc(25% - 16px) !important;
-  padding: 20px 12px !important;
-  background-color: var(--at-bg3) !important;
-  border: 1px solid rgba(250,179,135,0.55) !important;
-  border-radius: var(--at-radius) !important;
-  transition: border-color .2s, box-shadow .2s !important;
-}
-.donation-package__wrapper:hover {
-  border-color: var(--at-accent) !important;
-  box-shadow: 0 0 14px rgba(250,179,135,0.25) !important;
-}
 html body .panel__header select,
 html body .panel__header .form__select {
   min-width: 110px !important;
@@ -2416,6 +2401,22 @@ html body .bets-table__name-col{
 }
 html body .bets-table tbody tr:hover td{
   background-color: var(--at-accent-faint) !important;
+}
+
+html body .raffle-lobby__balance,
+html body .raffle-lobby__balance span,
+html body .raffle-lobby__balance i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .raffle-stat-card__value{
+  font-size: 21px !important;
+}
+
+html body .donation-sidebar__heading{
+  letter-spacing: normal !important;
+  padding-left: 5px !important;
+  font-size: 18px !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
