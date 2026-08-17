@@ -2497,3 +2497,81 @@ html body .torrent-comments__header i{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
 }
+
+html body .post__author-join a,
+html body .post__author-topics a,
+html body .post__author-posts a{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .post__author-join a:hover,
+html body .post__author-topics a:hover,
+html body .post__author-posts a:hover,
+html body .post__aside a:hover{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .post__toolbar{
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+html body .post__tip-input{
+  background-color: rgba(255,255,255,0.06) !important;
+  border: 1px solid var(--g-hairline) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
+html body .post__toolbar-overflow{
+  background-color: transparent !important;
+  border: 1px solid var(--g-hairline-soft) !important;
+  border-radius: 6px !important;
+}
+
+html body tr.torrent-search--list__sticky-row,
+html body tr.torrent-search--list__sticky_row,
+html body tr[class*="sticky-row"],
+html body tr[class*="sticky_row"]{
+  border-left: 3px solid var(--at-accent) !important;
+  box-shadow: none !important;
+}
+html body tr.torrent-search--list__sticky-row:hover,
+html body tr.torrent-search--list__sticky_row:hover,
+html body tr[class*="sticky-row"]:hover,
+html body tr[class*="sticky_row"]:hover{
+  border-left: 3px solid var(--at-accent) !important;
+  box-shadow: none !important;
+}
+
+html body .panel__body .post__aside a:not([class]),
+html body .panel__body .post__author-join dt a,
+html body .panel__body .post__author-topics dt a,
+html body .panel__body .post__author-posts dt a,
+html body .post__aside .post__author-join dt a,
+html body .post__aside .post__author-topics dt a,
+html body .post__aside .post__author-posts dt a{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .panel__body .post__aside a:not([class]):hover,
+html body .panel__body .post__author-join dt a:hover,
+html body .panel__body .post__author-topics dt a:hover,
+html body .panel__body .post__author-posts dt a:hover,
+html body .post__aside .post__author-join dt a:hover,
+html body .post__aside .post__author-topics dt a:hover,
+html body .post__aside .post__author-posts dt a:hover{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-section__title i,
+html body .torrent-reviews__form-title i,
+html body .torrent-reviews__title i,
+html body .torrent-comments__header-title i,
+html body [class*="__title"] > i.fas,
+html body [class*="__title"] > i.far{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
