@@ -77,10 +77,10 @@ body, html { background-color: var(--k-bg) !important; color: var(--k-text) !imp
 html { scrollbar-width: thin !important; scrollbar-color: var(--k-bg5) var(--k-bg) !important; }
 .top-nav { background-color: #000 !important; border-bottom: 1px solid var(--k-accent-border) !important; }
 a.top-nav__branding img     { display: none !important; }
-.top-nav__site-logo         { display: none !important; }
+
 a.top-nav__branding { display: inline-flex !important; align-items: center !important; gap: 8px !important; text-decoration: none !important; }
-a.top-nav__branding::before { content: "\72D0" !important; font-size: 22px !important; line-height: 1 !important; color: var(--k-accent) !important; font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important; text-shadow: 0 0 10px rgba(244,170,202,0.5) !important; }
-a.top-nav__branding::after { content: "LST" !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: .18em !important; color: var(--k-accent) !important; font-family: 'Inter', system-ui, sans-serif !important; }
+
+
 .top-nav__ratio-bar, .top-nav__ratio-bar a, .top-nav__ratio-bar span { color: var(--k-text) !important; }
 .top-nav__main-menus a:not([style*="color"]), .top-nav--left__list-item a:not([style*="color"]) { color: var(--k-text) !important; }
 .top-nav__main-menus a:not([style*="color"]):hover { color: var(--k-accent) !important; }
@@ -1812,6 +1812,41 @@ html body .votes__dislike{
   background-color: transparent !important;
   background-image: none !important;
   border-color: transparent !important;
+}
+html body .votes__like:hover{
+  background-color: rgba(48,209,88,0.14) !important;
+  border-color: transparent !important;
+}
+html body .votes__dislike:hover{
+  background-color: rgba(255,69,58,0.14) !important;
+  border-color: transparent !important;
+}
+html body .votes__like:hover,
+html body .votes__like:hover i,
+html body .votes__like:hover .votes__like-count{
+  color: var(--k-matcha) !important;
+  -webkit-text-fill-color: var(--k-matcha) !important;
+}
+html body .votes__dislike:hover,
+html body .votes__dislike:hover i,
+html body .votes__dislike:hover .votes__dislike-count{
+  color: var(--k-torii) !important;
+  -webkit-text-fill-color: var(--k-torii) !important;
+}
+html body .post__permalink,
+html body .post__toolbar-item a,
+html body .post__toolbar-item button{
+  color: var(--k-text2) !important;
+}
+html body .post__permalink:hover,
+html body .post__permalink:hover i,
+html body .post__toolbar-item a:hover,
+html body .post__toolbar-item a:hover i,
+html body .post__toolbar-item button:not(.votes__like):not(.votes__dislike):hover,
+html body .post__toolbar-item button:not(.votes__like):not(.votes__dislike):hover i{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+  background-color: var(--k-accent-faint) !important;
 }
 
 html body .post__tip-input,
