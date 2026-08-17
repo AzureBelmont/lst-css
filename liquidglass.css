@@ -2178,11 +2178,10 @@ html body .blocks__random-media .panel__heading i{
   -webkit-text-fill-color: var(--at-accent) !important;
 }
 
-html body .topic-listing,
-html body .topic-listings__item,
-html body li.topic-listing,
-html body .subforum-listings__item{
-  border-left-color: var(--at-accent) !important;
+html body .topic-item__indicator,
+html body .topic-listing__indicator{
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
 }
 html body .topic-listing__figure,
 html body .forum-item__icon{
@@ -2299,4 +2298,71 @@ html body div.form__group > select.form__select{
   background-color: rgba(255,255,255,0.06) !important;
   border: 1px solid var(--g-hairline) !important;
   border-radius: var(--g-radius) !important;
+}
+
+html body .topic-item__icon,
+html body .topic-listing__icon{
+  background-color: var(--at-accent-faint) !important;
+  color: var(--at-accent) !important;
+  border-color: var(--at-accent-faint) !important;
+}
+
+html body .torrent-actions__btn--download,
+html body .torrent-upload-actions__btn--primary,
+html body .torrent-wasm-upload__close{
+  background: var(--at-accent) !important;
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-accent) !important;
+  color: #ffffff !important;
+}
+html body .torrent-actions__btn--download:hover,
+html body .torrent-upload-actions__btn--primary:hover{
+  background-color: var(--at-accent2) !important;
+  border-color: var(--at-accent2) !important;
+}
+
+html body .torrent-wasm-upload__drop,
+html body .torrent-wasm-upload__dropzone,
+html body .torrent-wasm-upload__drop-inner{
+  border-color: var(--g-hairline) !important;
+}
+html body .torrent-wasm-upload__drop:hover,
+html body .torrent-wasm-upload__dropzone:hover,
+html body .torrent-wasm-upload__drop-inner:hover,
+html body .torrent-wasm-upload__drop.is-dragover,
+html body .torrent-wasm-upload__dropzone.is-dragover{
+  border-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+}
+
+html body .chatV2__message::before,
+html body .chatV2__replyBar::before,
+html body .chatV2__imageWrap.is-loading::before,
+html body .chatV2__newMessagesSeparator::before,
+html body .chatV2__newMessagesSeparator::after{
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
+  border-color: var(--at-accent) !important;
+}
+html body .chatV2__avatar{
+  border-color: var(--g-hairline) !important;
+}
+
+html body .top-nav--left__list-item a[href*="donat" i],
+html body nav.top-nav a[href*="donat" i]{
+  text-decoration: none !important;
+}
+html body .top-nav--left__list-item a[href*="donat" i]:hover,
+html body nav.top-nav a[href*="donat" i]:hover{
+  text-decoration: underline !important;
+}
+
+html body .nav-tabV2 i.fa-star,
+html body .nav-tab__link i.fa-star,
+html body .nav-tab--active__link i.fa-star,
+html body .secondary-nav i.fa-star,
+html body .panel__heading i.fa-star{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
