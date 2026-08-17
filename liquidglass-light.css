@@ -1199,7 +1199,6 @@ html body .form__button--outlined, html body a.form__button--outlined{
   background: rgba(255,255,255,0.70) !important;
   border: 1px solid var(--g-hairline) !important;
   border-radius: 980px !important;
-  backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important;
 }
 html body .form__text, html body .form__select, html body .form__search,
 html body .form__textarea, html body input[type="text"], html body input[type="search"],
@@ -2798,6 +2797,30 @@ html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active{
   background-color: rgba(255,69,58,0.15) !important;
   border-color: rgba(255,69,58,0.45) !important;
   color: var(--at-red) !important;
+}
+
+html body .general-prefs-panel,
+html body .general-homepage-editor,
+html body .general-prefs-subsection,
+html body .settings-section,
+html body .bbcode-input__tab-pane,
+html body .panel__body.collection__posters,
+html body .collection__posters{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body .settings-save-bar{
+  background-color: var(--g-bar) !important;
+  background-image: none !important;
+  border-top: 1px solid var(--g-hairline-soft) !important;
+}
+
+html body .chatV2__meStatusDot,
+html body .chatV2__connectionDot,
+html body [class*="chatV2__"][class*="StatusDot"]{
+  color: var(--at-green) !important;
+  background-color: var(--at-green) !important;
 }
 
 

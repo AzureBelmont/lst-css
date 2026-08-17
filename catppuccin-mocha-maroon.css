@@ -2273,4 +2273,28 @@ html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active{
   color: var(--at-red) !important;
 }
 
+html body .general-prefs-panel,
+html body .general-homepage-editor,
+html body .general-prefs-subsection,
+html body .settings-section,
+html body .bbcode-input__tab-pane,
+html body .panel__body.collection__posters,
+html body .collection__posters{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body .settings-save-bar{
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  border-top: 1px solid var(--at-border) !important;
+}
+
+html body .chatV2__meStatusDot,
+html body .chatV2__connectionDot,
+html body [class*="chatV2__"][class*="StatusDot"]{
+  color: var(--at-green) !important;
+  background-color: var(--at-green) !important;
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
