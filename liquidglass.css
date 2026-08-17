@@ -2208,11 +2208,6 @@ html body .chatV2__columnHeaderDot{
   background-color: var(--at-green) !important;
 }
 
-html body .chatV2__memberAvatar,
-html body .chatV2__meAvatar,
-html body img.chatV2__memberAvatar,
-html body img.chatV2__meAvatar,
-html body .chatV2__avatarFallback,
 html body .top-nav__dropdown ul li a i,
 html body .top-nav__dropdown-menu li a i,
 html body .top-nav--left__dropdown li a i,
@@ -2221,11 +2216,7 @@ html body a.top-nav--right__icon-link i,
 html body a.top-nav__profile-trigger{
   border-radius: 50% !important;
 }
-html body .chatV2__memberAvatar,
-html body .chatV2__meAvatar{
-  border-color: var(--g-hairline) !important;
-  box-shadow: none !important;
-}
+
 
 html body .chatV2__settingsHeaderIcon,
 html body .chatV2__settingsValueBadge,
@@ -2345,9 +2336,7 @@ html body .chatV2__newMessagesSeparator::after{
   background-image: none !important;
   border-color: var(--at-accent) !important;
 }
-html body .chatV2__avatar{
-  border-color: var(--g-hairline) !important;
-}
+
 
 html body .top-nav--left__list-item a[href*="donat" i],
 html body nav.top-nav a[href*="donat" i]{
@@ -2365,4 +2354,98 @@ html body .secondary-nav i.fa-star,
 html body .panel__heading i.fa-star{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .post__aside,
+html body article.post > .post__aside,
+html body .post__aside[class]{
+  background-image: none !important;
+}
+html body .post__avatar,
+html body .post__aside img,
+html body .post__author-avatar{
+  border-color: var(--g-hairline) !important;
+}
+html body .post__author-join-datetime,
+html body .post__author-topics-count,
+html body .post__author-posts-count,
+html body [class^="post__author-"][class$="-datetime"],
+html body [class^="post__author-"][class$="-count"],
+html body .post__author-join strong,
+html body .post__author-topics strong,
+html body .post__author-posts strong,
+html body .post__author-join b,
+html body .post__author-topics b,
+html body .post__author-posts b{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-search-row + .torrent-search-row,
+html body .topic-item + .topic-item,
+html body .torrent-card + .torrent-card{
+  border-top: 0 !important;
+}
+
+html body input[type="range"]::-webkit-slider-thumb,
+html body .chatV2__settingsRange::-webkit-slider-thumb{
+  background: var(--at-accent) !important;
+  background-color: var(--at-accent) !important;
+  border-color: var(--at-accent) !important;
+}
+html body input[type="range"]::-moz-range-thumb,
+html body .chatV2__settingsRange::-moz-range-thumb{
+  background: var(--at-accent) !important;
+  background-color: var(--at-accent) !important;
+  border-color: var(--at-accent) !important;
+}
+html body input[type="range"]::-webkit-slider-runnable-track,
+html body .chatV2__settingsRange::-webkit-slider-runnable-track{
+  background-color: var(--g-tint) !important;
+  background-image: none !important;
+}
+
+html body [class*="chatV2__"][class*="Close"],
+html body [class*="chatV2__"][class*="close"],
+html body .chatV2__settingsClose,
+html body .chatV2__modalClose,
+html body .chatV2__settingsHeaderClose{
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 1px solid var(--g-hairline) !important;
+  color: var(--at-text2) !important;
+}
+html body [class*="chatV2__"][class*="Close"]:hover,
+html body [class*="chatV2__"][class*="close"]:hover,
+html body .chatV2__settingsClose:hover{
+  border-color: var(--at-accent) !important;
+  color: var(--at-accent) !important;
+  background-color: var(--g-hover) !important;
+}
+
+html body .missing-media__request-badge,
+html body .missing-media__resolution-badge,
+html body .slots-machine__last-result,
+html body .slots-machine__last-result-value{
+  color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+  border-color: var(--at-accent-faint) !important;
+}
+html body .slots-machine__spin-button,
+html body .roulette-casino__btn--spin,
+html body .slots-machine__quick-bet--max{
+  background: var(--at-accent) !important;
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-accent) !important;
+  color: #ffffff !important;
+}
+
+html body .footer .footer__section:first-child .footer__section-title img,
+html body .footer__section-title img,
+html body footer .top-nav__site-logo + img,
+html body footer img[src*="favicon"]{
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
 }
