@@ -88,8 +88,8 @@ body { background-color: var(--at-bg) !important; color: var(--at-text) !importa
 html:has(main[class*="page__torrent-"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__subtitle"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__mediahub"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
-html:has(main[class*="page__graveyard"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
-html:has(main[class*="page__request"]) .top-nav--left__list-item:has(a[href="https://lst.gg/requests"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(main[class*="page__graveyard"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(main[class*="page__request"]) .top-nav--left__list-item:has(a[href="https://lst.gg/requests"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
 html:has(main[class*="page__forum"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
 html:has(main[class*="page__topic"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
 html:has(main[class*="page__post"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
@@ -98,10 +98,10 @@ html:has(main[class*="page__poll"]) .top-nav--left__list-item:has(a[href="https:
 html:has(main[class*="page__playlist"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
 html:has(main[class*="page__review"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
 html:has(main[class*="page__collection"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a,
-html:has(main[class*="page__stats"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(main[class*="page__stats"]) .top-nav--left__list-item:has(a[href="https://lst.gg/forums"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
 html:has(main[class*="page__page"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/wiki"]) > a,
 html:has(main[class*="page__ticket"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/wiki"]) > a,
-html:has(main[class*="page__report"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/wiki"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(main[class*="page__report"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/wiki"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
 html:has(main[class*="page__bets"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
 html:has(main[class*="page__blackjack"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
 html:has(main[class*="page__poker"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
@@ -109,8 +109,8 @@ html:has(main[class*="page__slots"]) nav.top-nav li.top-nav__dropdown:has(a[href
 html:has(main[class*="page__roulette"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
 html:has(main[class*="page__raffles"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
 html:has(main[class*="page__blacklist"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a,
-html:has(main[class*="page__missing"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
-html:has(.torrent-upload-page) .top-nav--left__list-item:has(a[href*="/torrents/create"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 2px solid var(--at-accent) !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(main[class*="page__missing"]) nav.top-nav li.top-nav__dropdown:has(a[href$="/blackjack"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
+html:has(.torrent-upload-page) .top-nav--left__list-item:has(a[href*="/torrents/create"]) > a { color: var(--at-accent) !important; border: none !important; border-bottom: 0 !important; border-radius: 0 !important; outline: none !important; box-shadow: none !important; padding-bottom: 2px !important; }
 .top-nav__dropdown--touch { border-radius: 0 !important; }
 .top-nav--left__list-item > a:hover, .top-nav--left__list-item:hover > a, li.top-nav__dropdown > a:hover, li.top-nav__dropdown:hover > a { color: var(--at-accent) !important; background-color: transparent !important; }
 li.top-nav__dropdown ul li a i.fas.fa-heartbeat, li.top-nav__dropdown ul li i.fas.fa-heartbeat { filter: none !important; background-border: none !important; }
@@ -2207,4 +2207,96 @@ html body .chatV2__statusDot,
 html body .chatV2__columnHeaderDot{
   color: var(--at-green) !important;
   background-color: var(--at-green) !important;
+}
+
+html body .chatV2__memberAvatar,
+html body .chatV2__meAvatar,
+html body img.chatV2__memberAvatar,
+html body img.chatV2__meAvatar,
+html body .chatV2__avatarFallback,
+html body .top-nav__dropdown ul li a i,
+html body .top-nav__dropdown-menu li a i,
+html body .top-nav--left__dropdown li a i,
+html body a.top-nav--right__icon-link,
+html body a.top-nav--right__icon-link i,
+html body a.top-nav__profile-trigger{
+  border-radius: 50% !important;
+}
+html body .chatV2__memberAvatar,
+html body .chatV2__meAvatar{
+  border-color: var(--g-hairline) !important;
+  box-shadow: none !important;
+}
+
+html body .chatV2__settingsHeaderIcon,
+html body .chatV2__settingsValueBadge,
+html body .chatV2__settingsPreviewBtn,
+html body .chatV2__settingsPreviewUser,
+html body .chatV2__settingsPreviewAuthor,
+html body .chatV2__avatarFallbackText,
+html body .chatV2__userIcon,
+html body .chatV2__replyIcon,
+html body .chatV2__newMessagesSeparator{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  border-color: var(--at-accent) !important;
+}
+html body .chatV2__unreadBadge,
+html body .chatV2__composerSend,
+html body .chatV2__scrollToLatestPopup{
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
+  border-color: var(--at-accent) !important;
+  color: #ffffff !important;
+}
+html body .chatV2__avatarFallback{
+  background-color: var(--at-accent-faint) !important;
+}
+html body .chatV2__pinned,
+html body .chatV2__banner,
+html body .chatV2__settingsNavItem.is-active,
+html body .chatV2__settingsNavItem[aria-current],
+html body .chatV2__settingsNavItem[aria-selected="true"]{
+  border-color: var(--at-accent) !important;
+}
+html body .chatV2__settingsRange,
+html body input[type="range"]{
+  accent-color: var(--at-accent) !important;
+}
+
+html body .forum-hero__icon,
+html body .torrent-upload-hero__icon,
+html body .ticket-hero__icon,
+html body .report-hero__icon,
+html body .notification-hero__icon,
+html body .profile-hero__icon{
+  border-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+}
+html body .torrent-wasm-upload__drop-icon,
+html body .torrent-wasm-upload__drop-icon i,
+html body .torrent-wasm-upload i.fa-cloud-upload-alt{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+  border-color: var(--at-accent) !important;
+}
+html body .torrent-wasm-upload__drop:hover,
+html body .torrent-wasm-upload__dropzone:hover,
+html body .torrent-wasm-upload:hover .torrent-wasm-upload__drop-icon{
+  border-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+}
+html body .torrent-upload-actions{
+  background-image: none !important;
+  background-color: var(--g-bar) !important;
+  border-color: var(--g-hairline-soft) !important;
+}
+
+html body div.form__group > input.form__text,
+html body div.form__group > textarea.form__textarea,
+html body div.form__group > select.form__select{
+  background-color: rgba(255,255,255,0.06) !important;
+  border: 1px solid var(--g-hairline) !important;
+  border-radius: var(--g-radius) !important;
 }
