@@ -1,7 +1,6 @@
 /* ==========================================================
    Liquid Glass — LST
    Apple-style frosted glass over an aurora wallpaper.
-   Built for lst.gg (UNIT3D + Galactic base).
 
    Author  AzureBelmont
    Repo    github.com/AzureBelmont/aither-css
@@ -12,16 +11,16 @@
 
    Palette
    ----------------------------------------------------------
-   --at-accent        #0A84FF    systemBlue   accent
-   --at-accent2       #409CFF    systemBlue L accent hover
+   --at-accent        #0A84FF    accent
+   --at-accent2       #409CFF    accent hover
    --at-bg            #0A0B0D    canvas       page background
    --at-bg2           #15161A    elevated     panel surface
    --at-bg3           #0E0F12    grouped      raised surface
-   --at-text          #F5F5F7    label        body text
-   --at-text2         #8E8E93    secondary    secondary text
-   --at-text3         #48484A    tertiary     borders / tint
-   --at-green         #30D158    systemGreen  seeders / success
-   --at-red           #FF453A    systemRed    leechers / error
+   --at-text          #F5F5F7    body text
+   --at-text2         #8E8E93    secondary text
+   --at-text3         #48484A    borders / tint
+   --at-green         #30D158    seeders / success
+   --at-red           #FF453A    leechers / error
    ========================================================== */
 :root {
   --key-value-padding: 10px;
@@ -86,7 +85,6 @@ body { background-color: var(--at-bg) !important; color: var(--at-text) !importa
 .footer__section:first-child .footer__section-title { color: var(--at-text) !important; display: flex !important; align-items: center !important; gap: 8px !important; font-size: inherit !important; font-weight: inherit !important; text-transform: none !important; letter-spacing: normal !important; }
 .footer .footer__section:first-child .footer__section-title img { filter: brightness(0) invert(1) opacity(0.92) !important; height: 28px !important; width: auto !important; }
 .footer__section:first-child .footer__section-title .top-nav__site-logo { background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; -webkit-text-fill-color: var(--at-text) !important; color: var(--at-text) !important; font-size: 15px !important; font-weight: 700 !important; letter-spacing: .05em !important; }
-html:has(main[class*="page__torrent-"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__torrent-"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__subtitle"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__mediahub"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
@@ -1144,17 +1142,6 @@ html body .top-nav__dropdown-menu,
 html body .secondary-nav__dropdown-menu,
 html body .quick-search__results,
 html body .meta__dropdown{ z-index: 1000 !important; }
-html body .top-nav__dropdown-menu,
-html body .top-nav__dropdown > ul,
-html body .quick-search__results,
-html body nav.secondary-nav dialog{
-  background: var(--at-bg3) !important;
-  background-color: var(--at-bg3) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: 1px solid var(--g-hairline) !important;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
-}
 html body .swal2-container, html body dialog{ z-index: 2000 !important; }
 html body .top-nav__site-logo{ font-weight: 600 !important; letter-spacing: -0.01em !important; }
 :root{
@@ -1483,7 +1470,20 @@ html body .bbcode-input__tab-label{ color: var(--at-text2) !important; }
 html body .quick-search{ pointer-events: none !important; }
 html body .quick-search__inputs,
 html body .quick-search__results{ pointer-events: auto !important; }
-html body .quick-search__inputs{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+
+html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
+html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
+html body .top-nav__dropdown-menu,
+html body .top-nav__dropdown > ul,
+html body .quick-search__results,
+html body nav.secondary-nav dialog{
+  background: var(--at-bg3) !important;
+  background-color: var(--at-bg3) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid var(--at-border) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
+}
 html body main.page__poker--index,
 html body main.page__slots--index,
 html body main.page__roulette--index,
