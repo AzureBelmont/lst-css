@@ -2125,11 +2125,11 @@ html body .forum-posts__header .post__topic a{
   -webkit-text-fill-color: var(--at-accent) !important;
 }
 
-html body main i.fa-comments,
-html body main i.fa-layer-group,
-html body main i.fa-folder,
-html body main i.fa-folder-open,
 html body .panel__heading i.fa-comments,
+html body h1 i.fa-comments, html body h2 i.fa-comments, html body h3 i.fa-comments,
+html body main i.fa-layer-group,
+html body [class*="__title"] i.fa-folder,
+html body [class*="__title"] i.fa-folder-open,
 html body .forum-posts__header i,
 html body .torrent-comments__header i{
   color: var(--at-accent) !important;
@@ -2212,6 +2212,24 @@ html body [class*="__title"] > i.fas,
 html body [class*="__title"] > i.far{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body main,
+html body main [class],
+html body [class*="page__"],
+html body [class*="forum-"],
+html body [class*="torrent-"]{
+  --forum-accent-rgb: 136,57,239;
+  --forum-secondary-rgb: 136,57,239;
+  --post-accent-rgb: 136,57,239;
+  --post-secondary-rgb: 136,57,239;
+  --settings-accent: var(--at-accent);
+  --settings-accent-rgb: 136,57,239;
+  --notification-accent-rgb: 136,57,239;
+  --topic-accent-rgb: 136,57,239;
+  --ticket-accent-rgb: 136,57,239;
+  --report-accent-rgb: 136,57,239;
+  --torrent-accent-rgb: 136,57,239;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
