@@ -1681,7 +1681,8 @@ html body .panel__heading i,
 html body .panel__heading svg,
 html body .panel__header > i,
 html body .forum-category__title i,
-html body i.fa-layer-group,
+html body .panel__heading i.fa-layer-group,
+html body [class*="__title"] i.fa-layer-group,
 html body .subforum-listing__icon i,
 html body .chatV2__columnHeaderIcon,
 html body .chatV2__columnHeaderTitle i,
@@ -2007,7 +2008,9 @@ html body .forum-posts__header .post__topic a{
 
 html body .panel__heading i.fa-comments,
 html body h1 i.fa-comments, html body h2 i.fa-comments, html body h3 i.fa-comments,
-html body main i.fa-layer-group,
+html body main h1 i.fa-layer-group,
+html body main h2 i.fa-layer-group,
+html body main h3 i.fa-layer-group,
 html body [class*="__title"] i.fa-folder,
 html body [class*="__title"] i.fa-folder-open,
 html body .forum-posts__header i,
@@ -2271,6 +2274,17 @@ html body .chatV2__connectionDot,
 html body [class*="chatV2__"][class*="StatusDot"]{
   color: var(--at-green) !important;
   background-color: var(--at-green) !important;
+}
+
+html body .user-tag__link,
+html body a[class*="user-tag"],
+html body [class*="user-tag"] a,
+html body [class*="user-tag"] i,
+html body .chatV2__author a,
+html body .chatV2__author i,
+html body [class*="__rank"],
+html body [class*="group-name"]{
+  -webkit-text-fill-color: currentColor !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

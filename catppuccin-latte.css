@@ -7,7 +7,7 @@
    Repo    github.com/AzureBelmont/lst-css
    Version 1.0
 
-   Base    Site style must be set to "Galactic".
+   Base    Site style must be set to "Light".
    Install Settings -> General -> External CSS Stylesheet
 
    Palette
@@ -1801,7 +1801,8 @@ html body .panel__heading i,
 html body .panel__heading svg,
 html body .panel__header > i,
 html body .forum-category__title i,
-html body i.fa-layer-group,
+html body .panel__heading i.fa-layer-group,
+html body [class*="__title"] i.fa-layer-group,
 html body .subforum-listing__icon i,
 html body .chatV2__columnHeaderIcon,
 html body .chatV2__columnHeaderTitle i,
@@ -2127,7 +2128,9 @@ html body .forum-posts__header .post__topic a{
 
 html body .panel__heading i.fa-comments,
 html body h1 i.fa-comments, html body h2 i.fa-comments, html body h3 i.fa-comments,
-html body main i.fa-layer-group,
+html body main h1 i.fa-layer-group,
+html body main h2 i.fa-layer-group,
+html body main h3 i.fa-layer-group,
 html body [class*="__title"] i.fa-folder,
 html body [class*="__title"] i.fa-folder-open,
 html body .forum-posts__header i,
@@ -2393,6 +2396,17 @@ html body [class*="chatV2__"][class*="StatusDot"]{
   background-color: var(--at-green) !important;
 }
 
+html body .user-tag__link,
+html body a[class*="user-tag"],
+html body [class*="user-tag"] a,
+html body [class*="user-tag"] i,
+html body .chatV2__author a,
+html body .chatV2__author i,
+html body [class*="__rank"],
+html body [class*="group-name"]{
+  -webkit-text-fill-color: currentColor !important;
+}
+
 
 html body main [class*="__help"],
 html body main [class*="__hint"],
@@ -2407,6 +2421,8 @@ html body main [class*="skeleton__"],
 html body main [class*="__placeholder"],
 html body main [class*="__muted"],
 html body .settings-section__description,
+html body .settings-save-bar__info,
+html body .settings-save-bar__info span,
 html body .general-prefs-panel__help,
 html body .general-prefs-subsection__label,
 html body .general-icon-picker__label,
@@ -2418,12 +2434,11 @@ html body .torrent-search-row__resolution,
 html body .torrent-search-row__media-label,
 html body .torrent-search-row__flag-more{
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
 }
 html body main [class*="__value"],
 html body main [class*="__count"],
 html body main [class*="__name"],
-html body main [class*="__title"]:not([class*="skeleton"]){
+html body main [class*="__title"]:not([class*="skeleton"]):not(.media__title){
   color: var(--at-text) !important;
 }
 
@@ -2437,7 +2452,6 @@ html body main li:not([class]),
 html body main figcaption,
 html body main label:not([class]){
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
 }
 
 html body .torrent-search-row__action,
@@ -2449,12 +2463,10 @@ html body .post__toolbar i,
 html body .post__toolbar-overflow i,
 html body [class*="__toolbar"] i:not([class*="text-"]){
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
 }
 html body .torrent-search-row__action:hover,
 html body .torrent-search-row__action:hover i{
   color: var(--at-accent) !important;
-  -webkit-text-fill-color: var(--at-accent) !important;
 }
 html body .torrent-search-row__action{
   background-color: var(--at-bg3) !important;
@@ -2472,7 +2484,6 @@ html body [class*="chatV2__settings"] h2,
 html body [class*="chatV2__settings"] h3,
 html body [class*="chatV2__settings"] h4{
   color: var(--at-text) !important;
-  -webkit-text-fill-color: var(--at-text) !important;
 }
 html body main [class*="Desc"],
 html body main [class*="Hint"],
@@ -2487,14 +2498,12 @@ html body [class*="chatV2__settings"] [class*="Desc"],
 html body [class*="chatV2__settings"] [class*="Hint"],
 html body [class*="chatV2__settings"] [class*="Sub"]{
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
 }
 html body main [class*="Title"],
 html body main [class*="Name"],
 html body main [class*="Value"],
 html body [class*="chatV2__settings"] [class*="Title"]{
   color: var(--at-text) !important;
-  -webkit-text-fill-color: var(--at-text) !important;
 }
 
 html body main th,
@@ -2510,7 +2519,6 @@ html body main [class*="__header"] > a,
 html body main [class*="__header"] > span:not([class*="badge"]),
 html body main [class*="__header"] > i{
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
 }
 
 html body .torrent-wasm-upload__drop-text,
@@ -2525,7 +2533,41 @@ html body [class*="__empty"],
 html body [class*="__empty"] span,
 html body [class*="__empty"] p{
   color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
+}
+
+html body .settings-toolbar__btn--danger,
+html body .settings-toolbar__btn--danger i,
+html body [class*="__btn--danger"],
+html body [class*="__btn--danger"] i{
+  color: var(--at-red) !important;
+}
+html body .general-block-row__position{
+  color: var(--at-accent2) !important;
+}
+
+html body .random__media a.media,
+html body .random__media a[class*="media"]{
+  opacity: 1 !important;
+}
+html body .random__media a[class*="media"] > span{
+  text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 10px rgba(0,0,0,0.55) !important;
+}
+html body .media__title,
+html body .random__media .media__title,
+html body .random__media [class*="media"] .media__title{
+  color: #FFFFFF !important;
+  background-color: rgba(0,0,0,0.62) !important;
+}
+
+html body .torrent-results__header{
+  background-color: var(--at-bg3) !important;
+  border: 1px solid var(--at-border) !important;
+}
+html body .torrent-results__view-btn--active,
+html body .torrent-results__view-btn--active i,
+html body [class*="__view-btn--active"],
+html body [class*="__view-btn--active"] i{
+  color: #FFFFFF !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
