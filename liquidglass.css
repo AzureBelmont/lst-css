@@ -1023,7 +1023,7 @@ html body{
   background:
     radial-gradient(1100px 820px at 14% 4%, rgba(10,132,255,0.20), transparent 60%),
     radial-gradient(900px 700px at 86% 18%, rgba(94,92,230,0.16), transparent 58%),
-    radial-gradient(1000px 900px at 50% 108%, rgba(48,209,88,0.07), transparent 62%),
+    radial-gradient(1000px 900px at 50% 108%, rgba(10,132,255,0.07), transparent 62%),
     linear-gradient(168deg,#15161A 0%,#0E0F12 55%,#0A0B0D 100%) !important;
   background-attachment: fixed !important;
 }
@@ -1443,7 +1443,7 @@ html body{
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E"),
     radial-gradient(1100px 820px at 14% 4%, rgba(10,132,255,0.20), transparent 60%),
     radial-gradient(900px 700px at 86% 18%, rgba(94,92,230,0.16), transparent 58%),
-    radial-gradient(1000px 900px at 50% 108%, rgba(48,209,88,0.07), transparent 62%),
+    radial-gradient(1000px 900px at 50% 108%, rgba(10,132,255,0.07), transparent 62%),
     linear-gradient(168deg,#15161A 0%,#0E0F12 55%,#0A0B0D 100%) !important;
   background-size: 180px 180px, auto, auto, auto, auto !important;
   background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat !important;
@@ -2448,4 +2448,28 @@ html body footer img[src*="favicon"]{
   filter: none !important;
   -webkit-filter: none !important;
   opacity: 1 !important;
+}
+
+html body .chatV2__settingsNavItem{
+  border-color: var(--g-hairline-soft) !important;
+}
+html body .chatV2__settingsNavItem.is-active,
+html body .chatV2__settingsNavItem[aria-current="true"],
+html body .chatV2__settingsNavItem[aria-selected="true"],
+html body .chatV2__settingsNavItem.is-selected{
+  border-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+  color: var(--at-accent) !important;
+}
+
+html body .post__author-join,
+html body .post__author-topics,
+html body .post__author-posts{
+  color: var(--at-text) !important;
+}
+html body .post__author-join > :last-child,
+html body .post__author-topics > :last-child,
+html body .post__author-posts > :last-child{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
