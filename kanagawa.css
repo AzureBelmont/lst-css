@@ -726,6 +726,21 @@ ul.torrent__tags .torrent-icons {
   filter: none !important;
   font-weight: 600 !important;
 }
+.donation-packages {
+  gap: 16px !important;
+}
+.donation-package__wrapper {
+  max-width: calc(25% - 16px) !important;
+  padding: 20px 12px !important;
+  background-color: var(--at-bg3) !important;
+  border: 1px solid rgba(126,156,216,0.55) !important;
+  border-radius: var(--at-radius) !important;
+  transition: border-color .2s, box-shadow .2s !important;
+}
+.donation-package__wrapper:hover {
+  border-color: var(--at-accent) !important;
+  box-shadow: 0 0 14px rgba(126,156,216,0.25) !important;
+}
 html body .panel__header select,
 html body .panel__header .form__select {
   min-width: 110px !important;
@@ -2285,6 +2300,98 @@ html body .chatV2__author i,
 html body [class*="__rank"],
 html body [class*="group-name"]{
   -webkit-text-fill-color: currentColor !important;
+}
+
+html body [class*="progress"] > [class*="bar"][class*="container"],
+html body [class*="progress"] > [class*="bar"][class*="track"],
+html body [class*="progress"] > [class*="bar"][class*="wrapper"],
+html body .bon-pool__progress-bar-container{
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+}
+html body .bon-pool__progress-bar,
+html body .bon-pool__progress-bar-container > .bon-pool__progress-bar{
+  background-color: var(--at-accent) !important;
+  background-image: none !important;
+}
+
+html body .collectible-card{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5) !important;
+}
+html body .collectible-card:hover{
+  background-color: var(--at-accent-faint) !important;
+}
+
+html body .pm-list,
+html body .pm-filters,
+html body .pm-stat-card{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5) !important;
+}
+html body .pm-list__header{
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  border-bottom: 1px solid var(--at-border) !important;
+}
+html body .pm-item,
+html body .pm-hero,
+html body .pm-hero__content,
+html body .pm-hero__info,
+html body .pm-stats-grid,
+html body .pm-filters__grid,
+html body .pm-item__content{
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body .pm-item:hover{
+  background-color: var(--at-accent-faint) !important;
+}
+html body .pm-item__action,
+html body .pm-hero__action-btn{
+  background-color: var(--at-bg3) !important;
+  border: 1px solid var(--at-border) !important;
+}
+html body .pm-hero__icon,
+html body .pm-stat-card__icon,
+html body .pm-hero__title i,
+html body .pm-list__title i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  background-color: var(--at-accent-faint) !important;
+  border-color: var(--at-accent) !important;
+}
+html body .pm-item__subject{
+  color: var(--at-text) !important;
+}
+html body .pm-item__meta,
+html body .pm-hero__subtitle,
+html body .pm-stat-card__label{
+  color: var(--at-text2) !important;
+}
+
+html body .bets-table thead{
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+}
+html body .bets-table th,
+html body .bets-table td,
+html body .bets-table__name,
+html body .bets-table__name-col{
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body .bets-table tbody tr:hover td{
+  background-color: var(--at-accent-faint) !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
