@@ -1,0 +1,30 @@
+/* ==========================================================
+   Tritanopia colorblind overlay (blue-yellow) — LST
+   Overlay. Stacks on top of any LST theme.
+
+   Author  AzureBelmont
+   Repo    github.com/AzureBelmont/lst-css
+   Version 1.0
+
+   Base    Site style must be set to "Galactic".
+   Install Settings -> General -> External CSS Stylesheet
+   ========================================================== */
+
+:root{
+  --color-green:             #58a6ff;
+  --color-light-green:       #79c0ff;
+  --color-dark-green:        #1f6feb;
+  --torrent-row-seeders-fg:  #58a6ff;
+}
+
+html body .text-green{ color: #58a6ff !important; }
+
+main.page__user-torrents--index td.user-torrents__seedtime span.text-red::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; content: "\f00d\00a0"; }
+main.page__user-torrents--index td.user-torrents__seedtime span.text-green::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; content: "\f00c\00a0"; }
+
+html body td.torrent-search--list__seeders a::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; font-size: 0.8em; content: "\f062\00a0"; }
+html body td.torrent-search--list__leechers a::before{ font-family: "Font Awesome 6 Pro", "Font Awesome 5 Pro", FontAwesome; font-weight: 900; font-size: 0.8em; content: "\f063\00a0"; }
+
+html body .votes__like-icon, html body .votes__like-count{ color: #58a6ff !important; }
+
+html body .top-nav__ratio-bar i.fa-arrow-up, html body .top-nav__ratio-bar i.fa-upload{ color: #58a6ff !important; }
