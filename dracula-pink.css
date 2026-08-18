@@ -2421,4 +2421,101 @@ html body .donation-sidebar__heading{
   font-size: 18px !important;
 }
 
+html body .donation-package__wrapper:hover,
+html body .upload-section:hover,
+html body .upload-info__item:hover,
+html body .upload-info__link:hover,
+html body .upload-section .form__checkbox:hover,
+html body .upload-section .form__checkbox:focus,
+html body .upload-section .form__group:has(.form__checkbox):hover,
+html body .upload-section .form__select:hover,
+html body .upload-section .form__select:focus,
+html body .internal-group__user-card:hover,
+html body .missing-media__request-link:hover .missing-media__request-badge,
+html body .missing-media__resolution-badge:hover,
+html body .bet-create__form .form__text:focus,
+html body .bet-create__form .form__select:focus,
+html body .bet-create__add-btn:hover,
+html body .staff-internals__stat-badge--total:hover,
+html body .page__blackjack--table .blackjack-chat__input button:hover:not(:disabled),
+html body .page__blackjack--table .blackjack-btn--primary:hover:not(:disabled),
+html body .page__poker--index .poker-table-card:hover,
+html body .page__poker--index .poker-btn--primary:hover:not(:disabled),
+html body .page__poker--table .poker-seat--empty:hover .poker-seat__empty,
+html body .page__poker--table .poker-chat__input input:focus,
+html body .page__poker--table .poker-chat__input button:hover:not(:disabled),
+html body .page__poker--table .poker-btn--primary:hover:not(:disabled),
+html body .page__slots--index .slots-machine__quick-bet--max:hover:not(:disabled),
+html body .page__slots--index .blackjack-chat__input button:hover:not(:disabled){
+  border-color: var(--at-accent) !important;
+}
+html body .internal-group__user-card:hover .internal-group__username,
+html body .missing-media__title-link:hover,
+html body .similar-torrent-row__action--download:hover,
+html body .bets-table__link:hover,
+html body .staff-internals__name-link:hover{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .dialog__footer .form__button.form__button--filled:hover,
+html body .upload-info__item:hover,
+html body .upload-info__link:hover,
+html body .upload-section .form__checkbox:hover,
+html body .upload-section .form__group:has(.form__checkbox):hover,
+html body .missing-media__request-link:hover .missing-media__request-badge,
+html body .missing-media__resolution-badge:hover,
+html body .missing-media__table tbody tr:hover,
+html body .similar-torrent-row__action--download:hover,
+html body .bet-create__add-btn:hover,
+html body .staff-internals__table tbody tr:hover,
+html body .staff-internals__stats-table tbody tr:hover,
+html body .staff-internals__stat-badge--total:hover,
+html body .page__blackjack--table .blackjack-chat__input button:hover:not(:disabled),
+html body .page__blackjack--table .blackjack-btn--primary:hover:not(:disabled),
+html body .page__poker--table .poker-seat--empty:hover .poker-seat__empty,
+html body .page__slots--index .slots-machine__quick-bet--max:hover:not(:disabled),
+html body .page__slots--index .slots-machine__spin-button:hover:not(:disabled),
+html body .page__slots--index .blackjack-chat__input button:hover:not(:disabled){
+  background: rgba(255,121,198,0.18) !important;
+  background-color: rgba(255,121,198,0.18) !important;
+  background-image: none !important;
+}
+html body .donation-package__wrapper:hover .donation-package__icon,
+html body .upload-section:hover,
+html body .upload-section .form__checkbox:focus,
+html body .upload-section .form__select:focus,
+html body .upload-info__link:hover,
+html body .internal-group__header-content:hover .internal-group__icon-wrapper,
+html body .missing-media__request-link:hover .missing-media__request-badge,
+html body .missing-media__resolution-badge:hover,
+html body .missing-media__table tbody tr:hover,
+html body .staff-internals__table tbody tr:hover,
+html body .staff-internals__stats-table tbody tr:hover,
+html body .dialog__footer .form__button.form__button--filled:hover,
+html body .page__blackjack--table .blackjack-chat__input button:hover:not(:disabled),
+html body .page__slots--index .slots-machine__spin-button:hover:not(:disabled),
+html body .page__slots--index .blackjack-chat__input button:hover:not(:disabled){
+  box-shadow: 0 2px 12px rgba(255,121,198,0.40) !important;
+}
+
+@media (max-width: 768px){
+  html body .post__toolbar,
+  html body article.post > .post__header .post__toolbar{
+    background-color: var(--at-bg2) !important;
+    background-image: none !important;
+    border: 1px solid var(--at-border) !important;
+    border-radius: var(--at-radius) !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
+  }
+  html body .post__toolbar-item,
+  html body .post__toolbar-item a,
+  html body .post__toolbar-item button{
+    background-color: transparent !important;
+  }
+  html body .post__toolbar-item a:hover,
+  html body .post__toolbar-item button:not(.votes__like):not(.votes__dislike):hover{
+    background-color: var(--at-accent-faint) !important;
+  }
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
