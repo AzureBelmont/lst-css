@@ -210,8 +210,8 @@ td[class*="torrent-search--list__"] { background-color: transparent !important; 
 .data-table tbody tr:hover td, tr:hover td { background-color: var(--k-accent-faint) !important; }
 .data-table td { }
 .af-row { background-color: var(--k-bg2) !important; border-bottom: 1px solid var(--k-border-faint) !important; transition: background .15s !important; }
-.af-row:hover { background-color: var(--k-accent-faint) !important; box-shadow: inset 3px 0 0 var(--k-accent) !important; }
-tr.torrent-search--list__sticky-row { background-color: transparent !important; border-left: 3px solid var(--k-accent) !important; box-shadow: inset 3px 0 0 var(--k-accent) !important; }
+.af-row:hover { background-color: var(--k-accent-faint) !important; }
+tr.torrent-search--list__sticky-row { background-color: transparent !important; border-left: 3px solid var(--k-accent) !important; }
 tr.torrent-search--list__sticky-row td { background-color: transparent !important; }
 tr.torrent-search--list__sticky-row .torrent-search--list__name > a:first-child { color: var(--k-text) !important; }
 .torrent-search--list__name > a:first-child { color: var(--k-text) !important; font-weight: 500 !important; }
@@ -495,7 +495,7 @@ h2.meta__heading { margin-top: 0 !important; margin-bottom: 6px !important; }
 .torrent-icons__vision { display: inline-flex !important; align-items: center !important; }
 .torrent-icons img, .torrent-icons__vision img { display: inline-block !important; vertical-align: middle !important; height: 14px !important; width: auto !important; filter: invert(1) brightness(0.8) !important; }
 tr.torrent-search--list__sticky-row:hover td { background-color: transparent !important; }
-tr.torrent-search--list__sticky-row:hover { background-color: rgba(244,170,202,0.10) !important; }
+tr.torrent-search--list__sticky-row:hover { background-color: color-mix(in srgb, var(--at-accent) 16%, #101524) !important; }
 html body .panel__header select, html body .panel__header .form__select { min-width: 110px !important; }
 td.data-table__bon-taxed { display: table-cell !important; vertical-align: middle !important; }
 td.data-table__bon-taxed i.fa-percent { margin-left: 4px !important; }
@@ -2407,6 +2407,98 @@ html body .torrent-results__title,
 html body .torrent-results__title-group > .torrent-results__title{
   color: var(--k-accent) !important;
   -webkit-text-fill-color: var(--k-accent) !important;
+}
+
+html body .chatV2,
+html body .chatV2__layout,
+html body [class*="chatV2__"]{
+  --chatv2-accent: var(--k-accent);
+  --chatv2-accent-fg: var(--k-bg2);
+}
+html body .torrent-reviews__title,
+html body .blocks__recent-reviews .torrent-reviews__title,
+html body [class*="__title"]:not([class*="skeleton"]):not(.media__title):not([class*="row__"]) > i.fa-star{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
+
+html body .torrent-reviews__form-title,
+html body .torrent-comments__header-title,
+html body .torrent-comments__header-title h4,
+html body .torrent-section__title{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
+
+html body{
+  --meta-fg: var(--k-text2);
+  --meta-dropdown-bg: var(--k-bg3);
+  --meta-dropdown-fg: var(--k-text);
+  --meta-dropdown-hover-bg: var(--k-accent-faint);
+  --meta-dropdown-hover-fg: var(--k-accent);
+  --meta-popup-bg: var(--k-bg3);
+  --meta-popup-fg: var(--k-text2);
+  --meta-tabs-bg: transparent;
+  --meta-tab-bg: rgba(255,255,255,0.05);
+  --meta-tab-fg: var(--k-text2);
+  --meta-tab-hover-bg: var(--k-accent-faint);
+  --meta-tab-hover-fg: var(--k-text);
+  --meta-tab-active-bg: var(--k-accent-faint);
+  --meta-tab-active-fg: var(--k-text);
+  --meta-tab-active-border: var(--k-accent);
+  --meta-description-fg: var(--k-text2);
+  --meta-id-tag-fg: var(--k-text2);
+  --meta-id-tag-bg: rgba(255,255,255,0.05);
+  --meta-id-tag-hover-fg: var(--k-accent);
+  --meta-id-tag-hover-bg: var(--k-accent-faint);
+  --meta-chips-heading-fg: var(--k-text2);
+  --meta-chip-icon-fg: var(--k-accent);
+  --meta-chip-icon-bg: rgba(255,255,255,0.05);
+  --meta-chip-icon-hover-bg: var(--k-accent-faint);
+  --meta-chip-name-fg: var(--k-text2);
+  --meta-chip-value-fg: var(--k-text);
+  --meta-chip-value-hover-fg: var(--k-accent);
+  --meta-chip-hover-bg: var(--k-accent-faint);
+}
+html body .torrent-meta__dropdown,
+html body .meta__dropdown,
+html body [class*="meta__popup"]{
+  background: var(--k-bg3) !important;
+  background-color: var(--k-bg3) !important;
+  background-image: none !important;
+  
+  border-color: var(--k-border) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
+}
+html body .torrent-meta__dropdown-item,
+html body .torrent-meta__dropdown-item > a,
+html body .torrent-meta__dropdown-item > button,
+html body .torrent-meta__dropdown-item button{
+  color: var(--k-text) !important;
+  -webkit-text-fill-color: var(--k-text) !important;
+}
+html body .torrent-meta__dropdown-item i{
+  color: var(--k-text2) !important;
+  -webkit-text-fill-color: var(--k-text2) !important;
+}
+html body .torrent-meta__dropdown-item:hover{
+  background-color: var(--k-accent-faint) !important;
+}
+html body .torrent-meta__dropdown-item:hover,
+html body .torrent-meta__dropdown-item:hover > a,
+html body .torrent-meta__dropdown-item:hover > button,
+html body .torrent-meta__dropdown-item:hover button,
+html body .torrent-meta__dropdown-item:hover i{
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
+
+html body .torrent-meta-bar{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

@@ -250,8 +250,8 @@ thead td, thead th { background-color: var(--at-bg3) !important; }
 th { background-color: var(--at-bg3) !important; color: var(--at-text2) !important; border-bottom: 1px solid var(--at-accent-faint) !important; }
 td[class*="torrent-search--list__"] { background-color: transparent !important; }
 .af-row { background-color: var(--at-bg2) !important; border-bottom: 1px solid var(--at-border) !important; border-left: 3px solid transparent !important; transition: box-shadow .15s, background .15s !important; }
-.af-row:hover { box-shadow: inset 3px 0 0 var(--at-accent) !important; background-color: rgba(126,156,216,0.03) !important; }
-tr.torrent-search--list__sticky-row { background-color: #16161D !important; border-left: 3px solid var(--at-accent) !important; box-shadow: inset 3px 0 0 var(--at-accent) !important; }
+.af-row:hover { background-color: rgba(126,156,216,0.03) !important; }
+tr.torrent-search--list__sticky-row { background-color: #16161D !important; border-left: 3px solid var(--at-accent) !important; }
 tr.torrent-search--list__sticky-row td { background-color: transparent !important; }
 tr.torrent-search--list__sticky-row .torrent-search--list__name > a:first-child { color: var(--at-text) !important; }
 .torrent-search--list__name > a:first-child { color: var(--at-text) !important; font-weight: 500 !important; }
@@ -653,7 +653,7 @@ tr.torrent-search--list__sticky-row:hover td {
   background-color: transparent !important;
 }
 tr.torrent-search--list__sticky-row:hover {
-  background-color: rgba(126,156,216,0.08) !important;
+  background-color: color-mix(in srgb, var(--at-accent) 16%, #101524) !important;
 }
 li.top-nav__dropdown ul li i.fas,
 li.top-nav__dropdown ul li i.far,
@@ -2737,6 +2737,98 @@ html body .torrent-results__title,
 html body .torrent-results__title-group > .torrent-results__title{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .chatV2,
+html body .chatV2__layout,
+html body [class*="chatV2__"]{
+  --chatv2-accent: var(--at-accent);
+  --chatv2-accent-fg: var(--at-bg2);
+}
+html body .torrent-reviews__title,
+html body .blocks__recent-reviews .torrent-reviews__title,
+html body [class*="__title"]:not([class*="skeleton"]):not(.media__title):not([class*="row__"]) > i.fa-star{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-reviews__form-title,
+html body .torrent-comments__header-title,
+html body .torrent-comments__header-title h4,
+html body .torrent-section__title{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body{
+  --meta-fg: var(--at-text2);
+  --meta-dropdown-bg: var(--at-bg3);
+  --meta-dropdown-fg: var(--at-text);
+  --meta-dropdown-hover-bg: var(--at-accent-faint);
+  --meta-dropdown-hover-fg: var(--at-accent);
+  --meta-popup-bg: var(--at-bg3);
+  --meta-popup-fg: var(--at-text2);
+  --meta-tabs-bg: transparent;
+  --meta-tab-bg: rgba(255,255,255,0.06);
+  --meta-tab-fg: var(--at-text2);
+  --meta-tab-hover-bg: var(--at-accent-faint);
+  --meta-tab-hover-fg: var(--at-text);
+  --meta-tab-active-bg: var(--at-accent-faint);
+  --meta-tab-active-fg: var(--at-text);
+  --meta-tab-active-border: var(--at-accent);
+  --meta-description-fg: var(--at-text2);
+  --meta-id-tag-fg: var(--at-text2);
+  --meta-id-tag-bg: rgba(255,255,255,0.06);
+  --meta-id-tag-hover-fg: var(--at-accent);
+  --meta-id-tag-hover-bg: var(--at-accent-faint);
+  --meta-chips-heading-fg: var(--at-text2);
+  --meta-chip-icon-fg: var(--at-accent);
+  --meta-chip-icon-bg: rgba(255,255,255,0.06);
+  --meta-chip-icon-hover-bg: var(--at-accent-faint);
+  --meta-chip-name-fg: var(--at-text2);
+  --meta-chip-value-fg: var(--at-text);
+  --meta-chip-value-hover-fg: var(--at-accent);
+  --meta-chip-hover-bg: var(--at-accent-faint);
+}
+html body .torrent-meta__dropdown,
+html body .meta__dropdown,
+html body [class*="meta__popup"]{
+  background: var(--at-bg3) !important;
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  
+  border-color: var(--at-border) !important;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
+}
+html body .torrent-meta__dropdown-item,
+html body .torrent-meta__dropdown-item > a,
+html body .torrent-meta__dropdown-item > button,
+html body .torrent-meta__dropdown-item button{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+html body .torrent-meta__dropdown-item i{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-meta__dropdown-item:hover{
+  background-color: var(--at-accent-faint) !important;
+}
+html body .torrent-meta__dropdown-item:hover,
+html body .torrent-meta__dropdown-item:hover > a,
+html body .torrent-meta__dropdown-item:hover > button,
+html body .torrent-meta__dropdown-item:hover button,
+html body .torrent-meta__dropdown-item:hover i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-meta-bar{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
