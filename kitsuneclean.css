@@ -2564,6 +2564,13 @@ html body section.torrent-results > nav.pagination .pagination__current{
   -webkit-text-fill-color: var(--k-accent) !important;
   border-color: var(--k-accent-faint) !important;
 }
+html body section.torrent-results > nav.pagination .pagination__link:hover,
+html body section.torrent-results > nav.pagination li.pagination__previous:not([class*="--disabled"]):hover,
+html body section.torrent-results > nav.pagination li.pagination__next:not([class*="--disabled"]):hover{
+  background-color: var(--k-accent-faint) !important;
+  color: var(--k-accent) !important;
+  -webkit-text-fill-color: var(--k-accent) !important;
+}
 
 html body .torrent-actions__btn--download,
 html body a[href*="/torrents/download/"].torrent-actions__btn{

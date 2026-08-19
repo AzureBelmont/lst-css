@@ -2917,6 +2917,13 @@ html body section.torrent-results > nav.pagination .pagination__current{
   -webkit-text-fill-color: var(--at-accent) !important;
   border-color: var(--at-accent-faint) !important;
 }
+html body section.torrent-results > nav.pagination .pagination__link:hover,
+html body section.torrent-results > nav.pagination li.pagination__previous:not([class*="--disabled"]):hover,
+html body section.torrent-results > nav.pagination li.pagination__next:not([class*="--disabled"]):hover{
+  background-color: var(--at-accent-faint) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
 
 html body .torrent-actions__btn--download,
 html body a[href*="/torrents/download/"].torrent-actions__btn{
