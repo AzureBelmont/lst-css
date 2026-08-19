@@ -651,7 +651,7 @@ tr.torrent-search--list__sticky-row:hover td {
   background-color: transparent !important;
 }
 tr.torrent-search--list__sticky-row:hover {
-  background-color: color-mix(in srgb, var(--at-accent) 16%, #0E0F12) !important;
+  background-color: #2C2C2E !important;
 }
 li.top-nav__dropdown ul li i.fas,
 li.top-nav__dropdown ul li i.far,
@@ -2430,8 +2430,10 @@ html body .torrent-wasm-upload__drop-icon i,
 html body .torrent-wasm-upload i.fa-cloud-upload-alt{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .torrent-wasm-upload .torrent-wasm-upload__drop-icon{
   background-color: var(--at-accent-faint) !important;
-  border-color: var(--at-accent) !important;
+  border-color: color-mix(in srgb, var(--at-accent) 35%, transparent) !important;
 }
 html body .torrent-wasm-upload__drop:hover,
 html body .torrent-wasm-upload__dropzone:hover,
@@ -3334,7 +3336,6 @@ html body section.torrent-results{
   box-shadow: var(--g-shadow), var(--g-highlight) !important;
 }
 html body .torrent-results__header,
-html body .torrent-results__sort-bar,
 html body section.torrent-results > nav.pagination,
 html body section.torrent-results > nav.pagination .pagination__link,
 html body section.torrent-results > nav.pagination li.pagination__previous,
@@ -3347,7 +3348,29 @@ html body section.torrent-results > nav.pagination li.pagination__ellipsis{
   box-shadow: none !important;
 }
 html body .torrent-results__header{
+  background-color: var(--at-bg2) !important;
   border-bottom: 1px solid var(--g-hairline) !important;
+}
+html body .torrent-results__sort-bar{
+  background: var(--g-tint) !important;
+  background-color: var(--g-tint) !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--at-accent-faint) !important;
+}
+html body .torrent-results__sort-btn,
+html body .torrent-results__sort-bar [class*="sort-btn"]{
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-results__sort-btn:hover,
+html body .torrent-results__sort-bar [class*="sort-btn"]:hover{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 html body section.torrent-results > nav.pagination{
   border-color: var(--g-hairline) !important;
