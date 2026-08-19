@@ -1,6 +1,6 @@
 /* ==========================================================
-   Kitsune Clean — Aither
-   Kitsune without the rank renames.
+   Kitsune — Aither
+   OLED black + sakura pink. Yokai rank renames.
 
    Author  AzureBelmont
    Repo    github.com/AzureBelmont/aither-css
@@ -60,6 +60,21 @@
   --label-fg-active:              #888888;
   --secondary-nav-tab-hover-text-decoration: underline var(--k-accent) 2px;
   --color-links-hover: #F4AACA;
+  --k-rank-main-1: #FFF2F5;
+  --k-rank-main-2: #FCE2E7;
+  --k-rank-main-3: #F9D3DB;
+  --k-rank-main-4: #F6C4CE;
+  --k-rank-main-5: #F4AACA;
+  --k-rank-main-6: #E88FAF;
+  --k-rank-main-7: #DC7394;
+  --k-rank-main-8: #C94D73;
+  --k-rank-up-1: #FFE8D1;
+  --k-rank-up-2: #FFD4A8;
+  --k-rank-up-3: #FFB86B;
+  --k-rank-up-4: #FF9D42;
+  --k-rank-up-5: #F07E1E;
+  --k-rank-up-6: #D4640F;
+  --k-rank-badge: #9aa0b5;
 }
 
 li.top-nav__dropdown ul li a.top-nav__username i[class*="fa-"] { color: inherit !important; background-color: transparent !important; border-color: transparent !important; }
@@ -178,6 +193,37 @@ a.user-tag__link:hover span, a.chatroom-users__user-link:hover span { color: var
 
 .panel__heading::before { display: none !important; }
 .panel__body, div.panel__body { background-color: var(--k-bg2) !important; }
+
+[style*="color:#95a5a6" i],[style*="color: #95a5a6" i] { color: #95A5A6 !important; }
+[style*="color:#5e372f" i],[style*="color: #5e372f" i] { color: #5E372F !important; }
+[style*="color:#b8c8ff" i],[style*="color: #b8c8ff" i] { color: var(--k-rank-main-1) !important; }
+[style*="color:#a5b8ff" i],[style*="color: #a5b8ff" i] { color: var(--k-rank-main-2) !important; }
+[style*="color:#7f8eff" i],[style*="color: #7f8eff" i] { color: var(--k-rank-main-3) !important; }
+[style*="color:#508bf2" i],[style*="color: #508bf2" i] { color: var(--k-rank-main-4) !important; }
+[style*="color:#6c7eff" i],[style*="color: #6c7eff" i] { color: var(--k-rank-main-5) !important; }
+[style*="color:#596eff" i],[style*="color: #596eff" i] { color: var(--k-rank-main-6) !important; }
+[style*="color:#466eff" i],[style*="color: #466eff" i] { color: var(--k-rank-main-7) !important; }
+[style*="color:#214e96" i],[style*="color: #214e96" i] { color: var(--k-rank-main-8) !important; }
+[style*="color:#66d9a3" i],[style*="color: #66d9a3" i] { color: var(--k-rank-up-1) !important; }
+[style*="color:#47c98d" i],[style*="color: #47c98d" i] { color: var(--k-rank-up-2) !important; }
+[style*="color:#39b87d" i],[style*="color: #39b87d" i] { color: var(--k-rank-up-3) !important; }
+[style*="color:#2fa36e" i],[style*="color: #2fa36e" i] { color: var(--k-rank-up-4) !important; }
+[style*="color:#258a5d" i],[style*="color: #258a5d" i] { color: var(--k-rank-up-5) !important; }
+[style*="color:#1a6b48" i],[style*="color: #1a6b48" i] { color: var(--k-rank-up-6) !important; }
+[style*="color:#2ecc71" i],[style*="color: #2ecc71" i] { color: #2ECC71 !important; }
+[style*="color:#7fff00" i],[style*="color: #7fff00" i] { color: #7FFF00 !important; }
+[style*="color:#912cdb" i],[style*="color: #912cdb" i] { color: #912cdb !important; }
+[style*="color:#d47cf2" i],[style*="color: #d47cf2" i] { color: #D47CF2 !important; }
+[style*="color:#bf55ec" i],[style*="color: #bf55ec" i] { color: #BF55EC !important; }
+[style*="color:#baaf92" i],[style*="color: #baaf92" i] { color: #BAAF92 !important; }
+[style*="color:#20726c" i],[style*="color: #20726c" i] { color: #20726c !important; }
+[style*="color:#15b097" i],[style*="color: #15b097" i] { color: #15B097 !important; }
+[style*="color:#f92672" i],[style*="color: #f92672" i] { color: #FF6B81 !important; }
+[style*="color:#ff9100" i],[style*="color: #ff9100" i] { color: #ff9100 !important; }
+[style*="color:#ffb24d" i],[style*="color: #ffb24d" i] { color: #ffb24d !important; }
+[style*="color:#00abff" i],[style*="color: #00abff" i] { color: #00abff !important; }
+[style*="color:#4ecdc4" i],[style*="color: #4ecdc4" i] { color: #4ECDC4 !important; }
+[style*="color:#f5a623" i],[style*="color: #f5a623" i] { color: #f5a623 !important; }
 
 html body .panel__header { background-color: var(--k-bg2) !important; border-radius: var(--k-radius) var(--k-radius) 0 0 !important; padding-right: 0 !important; display: flex !important; align-items: center !important; }
 html body .panel__header .panel__heading { flex: 1 !important; }
@@ -880,10 +926,6 @@ html body .filmclub__homepreview_data-table td > p{ display: inline-block !impor
 
 html body .filmclub__homepreview_data-table td > a :is(h1,h2,h3,h4){ margin: 0 !important; }
 
-html body .easy-upload3r__title{ color: var(--k-accent) !important; }
-
-html body .easy-upload3r__version{ background: var(--k-bg3) !important; background-color: var(--k-bg3) !important; color: var(--k-text) !important; }
-
 html body #torrent-progress,
 html body #mediainfo-progress,
 html body #screenshots-progress,
@@ -896,8 +938,12 @@ html body .step-progress-track{ background: var(--k-bg) !important; }
 html body #easyuploader-enhanced-overlay button,
 html body [id*="easyuploader"] button{ background-color: var(--k-accent) !important; color: var(--k-bg) !important; }
 
+html body .easy-upload3r__version{ background: var(--k-bg3) !important; background-color: var(--k-bg3) !important; color: var(--k-accent) !important; }
+
 html body #easyuploader-dropzone,
 html body .easy-upload3r__panel-beta{ border-color: var(--k-accent) !important; background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; }
+
+html body .easy-upload3r__title{ color: var(--k-accent) !important; }
 
 html body #easyuploader-enhanced-overlay div[style*="119, 96, 222"]:not(.step-progress):not(.processing-step){ color: var(--k-accent) !important; }
 
