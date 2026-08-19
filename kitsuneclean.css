@@ -837,6 +837,30 @@ html body select option{
   background-color: var(--k-bg3) !important;
   color: var(--k-text) !important;
 }
+html body ::selection{
+  background-color: color-mix(in srgb, var(--k-accent) 32%, transparent) !important;
+  color: var(--k-text) !important;
+}
+html body input:-webkit-autofill,
+html body input:-webkit-autofill:hover,
+html body input:-webkit-autofill:focus,
+html body textarea:-webkit-autofill,
+html body select:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px var(--k-bg3) inset !important;
+  box-shadow: 0 0 0 1000px var(--k-bg3) inset !important;
+  -webkit-text-fill-color: var(--k-text) !important;
+  caret-color: var(--k-text) !important;
+}
+html body ::placeholder{
+  color: var(--k-text3) !important;
+  opacity: 1 !important;
+}
+html body dialog::backdrop{
+  background-color: rgba(0,0,0,0.55) !important;
+}
+:root{
+  accent-color: var(--k-accent);
+}
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.05) !important; background-color: rgba(255,255,255,0.05) !important; border: 1px solid var(--k-border) !important; border-radius: var(--k-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--k-text) !important; }
@@ -2346,6 +2370,31 @@ html body select optgroup{
 html body select option{
   background-color: var(--k-bg2) !important;
   color: var(--k-text) !important;
+}
+
+html body ::selection{
+  background-color: color-mix(in srgb, var(--k-accent) 32%, transparent) !important;
+  color: var(--k-text) !important;
+}
+html body input:-webkit-autofill,
+html body input:-webkit-autofill:hover,
+html body input:-webkit-autofill:focus,
+html body textarea:-webkit-autofill,
+html body select:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px var(--k-bg2) inset !important;
+  box-shadow: 0 0 0 1000px var(--k-bg2) inset !important;
+  -webkit-text-fill-color: var(--k-text) !important;
+  caret-color: var(--k-text) !important;
+}
+html body ::placeholder{
+  color: var(--k-text2) !important;
+  opacity: 1 !important;
+}
+html body dialog::backdrop{
+  background-color: rgba(0,0,0,0.55) !important;
+}
+:root{
+  accent-color: var(--k-accent);
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
