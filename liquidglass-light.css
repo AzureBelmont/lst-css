@@ -2455,12 +2455,14 @@ html body .chatV2__newMessagesSeparator{
   border-color: var(--at-accent) !important;
 }
 html body .chatV2__unreadBadge,
+html body .chatV2__railBadge,
 html body .chatV2__composerSend,
 html body .chatV2__scrollToLatestPopup{
   background-color: var(--at-accent) !important;
   background-image: none !important;
   border-color: var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 html body .chatV2__avatarFallback{
   background-color: var(--at-accent-faint) !important;
@@ -3279,6 +3281,16 @@ html body dialog::backdrop{
 }
 :root{
   accent-color: var(--at-accent);
+}
+
+html body .panel__header,
+html body .panelV2 .panel__header{
+  background-image: none !important;
+}
+html body .torrent-results__title,
+html body .torrent-results__title-group > .torrent-results__title{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 
 
