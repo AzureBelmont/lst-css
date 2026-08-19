@@ -247,7 +247,7 @@ th { background-color: var(--at-bg3) !important; color: var(--at-text2) !importa
 td[class*="torrent-search--list__"] { background-color: transparent !important; }
 .af-row { background-color: var(--at-bg2) !important; border-bottom: 1px solid var(--at-border) !important; border-left: 3px solid transparent !important; transition: box-shadow .15s, background .15s !important; }
 .af-row:hover { background-color: rgba(245,166,35,0.03) !important; }
-tr.torrent-search--list__sticky-row { background-color: #101524 !important; border-left: 3px solid var(--at-accent) !important; }
+tr.torrent-search--list__sticky-row { background-color: color-mix(in srgb, var(--at-accent) 9%, #101524) !important; border-left: 3px solid var(--at-accent) !important; }
 tr.torrent-search--list__sticky-row td { background-color: transparent !important; }
 tr.torrent-search--list__sticky-row .torrent-search--list__name > a:first-child { color: var(--at-text) !important; }
 .torrent-search--list__name > a:first-child { color: var(--at-text) !important; font-weight: 500 !important; }
@@ -638,7 +638,7 @@ tr.torrent-search--list__sticky-row:hover td {
   background-color: transparent !important;
 }
 tr.torrent-search--list__sticky-row:hover {
-  background-color: color-mix(in srgb, var(--at-accent) 16%, #101524) !important;
+  background-color: color-mix(in srgb, var(--at-accent) 22%, #101524) !important;
 }
 li.top-nav__dropdown ul li i.fas,
 li.top-nav__dropdown ul li i.far,
@@ -1432,7 +1432,13 @@ html body .torrent-search-row{
   background-color: transparent !important;
 }
 html body .torrent-search-row:hover{
-  background-color: var(--at-accent-faint) !important;
+  background-color: var(--at-bg3) !important;
+}
+html body .torrent-search-row:hover .torrent-search-row__name,
+html body .torrent-search-row:hover .torrent-search-row__name a,
+html body .torrent-search-row__name a:hover{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 html body .torrent-search-row--sticky{
   background-color: var(--at-bg3) !important;
@@ -2824,6 +2830,108 @@ html body .torrent-meta-bar{
   background-image: none !important;
   border-color: transparent !important;
   box-shadow: none !important;
+}
+
+html body section.torrent-results{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5) !important;
+}
+html body .torrent-results__header,
+html body .torrent-results__sort-bar,
+html body section.torrent-results > nav.pagination,
+html body section.torrent-results > nav.pagination .pagination__link,
+html body section.torrent-results > nav.pagination li.pagination__previous,
+html body section.torrent-results > nav.pagination li.pagination__next,
+html body section.torrent-results > nav.pagination li.pagination__ellipsis{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+html body .torrent-results__header{
+  border-bottom: 1px solid var(--at-border) !important;
+}
+html body section.torrent-results > nav.pagination{
+  border-color: var(--at-border) !important;
+}
+html body section.torrent-results > nav.pagination li.pagination__current,
+html body section.torrent-results > nav.pagination .pagination__current{
+  background-color: var(--at-bg3) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  border-color: var(--at-accent-faint) !important;
+}
+
+html body .torrent-actions__btn--download,
+html body a[href*="/torrents/download/"].torrent-actions__btn{
+  background-color: var(--at-accent-faint) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-accent) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  font-weight: 600 !important;
+}
+html body .torrent-actions__btn--download i,
+html body a[href*="/torrents/download/"].torrent-actions__btn i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .torrent-actions__btn--download:hover,
+html body a[href*="/torrents/download/"].torrent-actions__btn:hover{
+  background-color: color-mix(in srgb, var(--at-accent) 22%, transparent) !important;
+  border-color: var(--at-accent) !important;
+  box-shadow: 0 0 12px var(--at-accent-faint) !important;
+}
+
+html body .torrent-upload-actions__btn--primary,
+html body .torrent-upload-actions__btn.torrent-upload-actions__btn--primary{
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 1px solid var(--at-text3) !important;
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+html body .torrent-upload-actions__btn--primary i{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+html body .torrent-upload-actions__btn--primary:hover{
+  background-color: var(--at-accent-faint) !important;
+  border-color: var(--at-accent) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body .torrent-upload-actions__btn--primary:hover i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-search-row__action,
+html body [class*="torrent-search-row__action--"]{
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+  box-shadow: none !important;
+}
+html body .torrent-search-row__action i,
+html body [class*="torrent-search-row__action--"] i{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body .torrent-search-row__action:hover,
+html body [class*="torrent-search-row__action--"]:hover{
+  background-color: var(--at-accent-faint) !important;
+  border-color: var(--at-accent) !important;
+}
+html body .torrent-search-row__action:hover i,
+html body [class*="torrent-search-row__action--"]:hover i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
