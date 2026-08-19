@@ -2985,4 +2985,15 @@ html body .torrent-results__list > .torrent-search-row.torrent-search-row:hover{
   background-color: color-mix(in srgb, var(--at-bg3) 88%, var(--at-text)) !important;
 }
 
+html body section.torrent-results{
+  gap: 0 !important;
+}
+html body section.torrent-results > nav.pagination{
+  border-bottom: 1px solid var(--at-border) !important;
+  padding: 4px 0 !important;
+}
+html body .torrent-results__list > .torrent-search-row{
+  margin: 0 !important;
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
