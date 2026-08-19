@@ -3449,3 +3449,31 @@ html body [class*="torrent-search-row__action--"]:hover i{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
 }
+
+html body .torrent-results__sort-bar{
+  padding: 4px 12px !important;
+}
+html body .torrent-results__sort-btn,
+html body .torrent-results__sort-bar [class*="sort-btn"]{
+  padding: 3px 8px !important;
+}
+html body .torrent-results__list{
+  gap: 0 !important;
+}
+html body .torrent-results__list > .torrent-search-row{
+  padding: 6px 12px !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--g-hairline) !important;
+}
+html body .torrent-results__list > .torrent-search-row:nth-child(odd):not(.torrent-search-row--sticky){
+  background-color: var(--at-bg2) !important;
+}
+html body .torrent-results__list > .torrent-search-row:nth-child(even):not(.torrent-search-row--sticky){
+  background-color: var(--g-tint) !important;
+}
+html body .torrent-results__list > .torrent-search-row.torrent-search-row--sticky.torrent-search-row--sticky{
+  background-color: color-mix(in srgb, var(--at-bg2) 85%, #000) !important;
+}
+html body .torrent-results__list > .torrent-search-row.torrent-search-row:hover{
+  background-color: color-mix(in srgb, var(--at-bg3) 88%, var(--at-text)) !important;
+}
