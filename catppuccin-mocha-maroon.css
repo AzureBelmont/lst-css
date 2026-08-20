@@ -1436,7 +1436,14 @@ html body .profile-hero__action-btn--primary,
 html body .forum-hero__action-btn--active,
 html body .ticket-hero__action-btn--primary,
 html body .ticket-hero__action-btn--active,
-html body .report-hero__action-btn--active,
+html body .report-hero__action-btn--active{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 1px solid var(--at-accent) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
 html body .torrent-results__view-btn--active{
   background-color: var(--at-accent) !important;
   border-color: var(--at-accent) !important;
@@ -1794,12 +1801,12 @@ html body .chatV2__settingsHeader{
 }
 html body .chatV2__settingsFooterBtn--primary,
 html body .chatV2__settingsSaveBtn{
-  background: var(--at-accent) !important;
-  background-color: var(--at-accent) !important;
+  background: transparent !important;
+  background-color: transparent !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: var(--at-bg2) !important;
-  -webkit-text-fill-color: var(--at-bg2) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 html body .chatV2__settingsFooterBtn--ghost{
   background-color: transparent !important;
@@ -2011,12 +2018,12 @@ html body .topic-listing__icon{
 html body .torrent-actions__btn--download,
 html body .torrent-upload-actions__btn--primary,
 html body .torrent-wasm-upload__close{
-  background: var(--at-accent) !important;
-  background-color: var(--at-accent) !important;
+  background: transparent !important;
+  background-color: transparent !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: var(--at-bg2) !important;
-  -webkit-text-fill-color: var(--at-bg2) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 html body .torrent-actions__btn--download:hover,
 html body .torrent-upload-actions__btn--primary:hover{
@@ -2145,12 +2152,12 @@ html body .slots-machine__last-result-value{
 html body .slots-machine__spin-button,
 html body .roulette-casino__btn--spin,
 html body .slots-machine__quick-bet--max{
-  background: var(--at-accent) !important;
-  background-color: var(--at-accent) !important;
+  background: transparent !important;
+  background-color: transparent !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: var(--at-bg2) !important;
-  -webkit-text-fill-color: var(--at-bg2) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
 }
 
 html body .footer .footer__section:first-child .footer__section-title img,
@@ -2311,8 +2318,9 @@ html body [class*="torrent-"]{
   --meta-accent-rgb: 235,160,172;
   --pm-accent-rgb: 235,160,172;
   --pm-accent: var(--at-accent);
-  --button-filled-fg: var(--at-bg2);
-  --button-filled-bg: var(--at-accent);
+  --button-filled-fg: var(--at-accent);
+  --button-filled-bg: transparent;
+  --button-filled-border: 1px solid var(--at-accent);
   --torrent-row-seeders-fg: var(--at-green);
   --torrent-row-leechers-fg: var(--at-red);
 }
@@ -3071,8 +3079,13 @@ html body [class*="torrent-upload-section--"]{
 }
 html body .form__button--filled,
 html body .bon-store__button--exchange{
-  color: var(--at-bg2) !important;
-  -webkit-text-fill-color: var(--at-bg2) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 1px solid var(--at-accent) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+  border-radius: 9999px !important;
 }
 
 html body a.torrent__seeder-count{
