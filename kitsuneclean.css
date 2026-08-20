@@ -2804,4 +2804,32 @@ html body [class*="topic-listings"]{
   --forum-accent-rgb: 244,170,202 !important;
 }
 
+html body section.pm-compose,
+html body div.privacy-category,
+html body div.settings-toolbar,
+html body section.settings-card{
+  background: var(--k-bg2) !important;
+  background-color: var(--k-bg2) !important;
+  background-image: none !important;
+  border-color: var(--k-border) !important;
+}
+html body div.gateway-item{
+  background: var(--k-bg3) !important;
+  background-color: var(--k-bg3) !important;
+  background-image: none !important;
+  border-color: var(--k-border) !important;
+}
+html body .blackjack-create-form__seat-option input:checked + .blackjack-create-form__seat-label,
+html body .blackjack-create-form__seat-label[class*="--selected"],
+html body .blackjack-create-form__seat-label[class*="--active"],
+html body .blackjack-create-form__seat-option.is-selected .blackjack-create-form__seat-label{
+  background-color: var(--k-accent-faint) !important;
+  border-color: var(--k-accent) !important;
+  color: var(--k-accent) !important;
+}
+html body .blackjack-table-card__value--seats{
+  color: var(--k-accent) !important;
+  border-color: var(--k-accent) !important;
+}
+
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
