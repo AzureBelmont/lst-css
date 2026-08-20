@@ -3157,4 +3157,41 @@ html body .blackjack-table-card__value--seats{
   border-color: var(--at-accent) !important;
 }
 
+html body section.topic-list{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border-color: var(--at-border) !important;
+}
+html body header.topic-list__header,
+html body footer.topic-list__footer,
+html body .pm-compose__header,
+html body .settings-card__header,
+html body .privacy-category__header,
+html body .irc-key__header{
+  background: var(--at-bg3) !important;
+  background-color: var(--at-bg3) !important;
+  background-image: none !important;
+  border-color: var(--at-border) !important;
+}
+html body header.topic-list__header{
+  border-bottom: 1px solid var(--at-border) !important;
+}
+html body footer.topic-list__footer{
+  border-top: 1px solid var(--at-border) !important;
+}
+html body .topic-list__footer nav.pagination,
+html body .topic-list__footer .pagination__link{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+html body .topic-list__footer .pagination__link:hover{
+  background-color: var(--at-accent-faint) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

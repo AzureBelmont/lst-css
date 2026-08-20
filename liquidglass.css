@@ -3651,3 +3651,40 @@ html body .blackjack-table-card__value--seats{
   color: var(--at-accent) !important;
   border-color: var(--at-accent) !important;
 }
+
+html body section.topic-list{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border-color: var(--g-hairline) !important;
+}
+html body header.topic-list__header,
+html body footer.topic-list__footer,
+html body .pm-compose__header,
+html body .settings-card__header,
+html body .privacy-category__header,
+html body .irc-key__header{
+  background: var(--g-bar) !important;
+  background-color: var(--g-bar) !important;
+  background-image: none !important;
+  border-color: var(--g-hairline) !important;
+}
+html body header.topic-list__header{
+  border-bottom: 1px solid var(--g-hairline) !important;
+}
+html body footer.topic-list__footer{
+  border-top: 1px solid var(--g-hairline) !important;
+}
+html body .topic-list__footer nav.pagination,
+html body .topic-list__footer .pagination__link{
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+html body .topic-list__footer .pagination__link:hover{
+  background-color: var(--g-hover) !important;
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
