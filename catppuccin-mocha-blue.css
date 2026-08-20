@@ -1440,7 +1440,8 @@ html body .report-hero__action-btn--active,
 html body .torrent-results__view-btn--active{
   background-color: var(--at-accent) !important;
   border-color: var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 
 html body .profile-hero__action-btn:hover,
@@ -1650,13 +1651,13 @@ html body,
 html body main,
 html body [class*="page__"]{
   --ui-accent-fg: var(--at-accent);
-  --ui-accent-gradient: linear-gradient(135deg, var(--at-accent) 0%, var(--at-accent2) 100%);
-  --ui-accent-gradient-strong: linear-gradient(135deg, var(--at-accent2) 0%, var(--at-accent) 100%);
+  --ui-accent-gradient: linear-gradient(135deg, var(--at-accent) 0%, var(--at-accent) 100%);
+  --ui-accent-gradient-strong: linear-gradient(135deg, var(--at-accent) 0%, var(--at-accent) 100%);
   --ui-accent-surface-bg: var(--at-accent-faint);
   --ui-accent-surface-bg-strong: var(--at-accent-faint);
   --ui-accent-surface-bg-weak: var(--at-accent-faint);
-  --ui-accent-surface-gradient: linear-gradient(135deg, var(--at-accent-faint) 0%, transparent 100%);
-  --ui-accent-surface-gradient-strong: linear-gradient(135deg, var(--at-accent-faint) 0%, transparent 100%);
+  --ui-accent-surface-gradient: none;
+  --ui-accent-surface-gradient-strong: none;
   --ui-focus-ring-color: var(--at-accent);
   --top-nav-link-underline: linear-gradient(to right, var(--at-accent), var(--at-accent2));
   --top-nav-link-hover-fg: var(--at-accent);
@@ -1733,7 +1734,8 @@ html body .achievement-icon__level{
   background: var(--at-accent) !important;
   background-image: none !important;
   border-color: var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 html body .achievement-icon,
 html body .achievement-icon--unlocked{
@@ -1796,7 +1798,8 @@ html body .chatV2__settingsSaveBtn{
   background-color: var(--at-accent) !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 html body .chatV2__settingsFooterBtn--ghost{
   background-color: transparent !important;
@@ -2012,7 +2015,8 @@ html body .torrent-wasm-upload__close{
   background-color: var(--at-accent) !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 html body .torrent-actions__btn--download:hover,
 html body .torrent-upload-actions__btn--primary:hover{
@@ -2145,7 +2149,8 @@ html body .slots-machine__quick-bet--max{
   background-color: var(--at-accent) !important;
   background-image: none !important;
   border: 1px solid var(--at-accent) !important;
-  color: #ffffff !important;
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
 }
 
 html body .footer .footer__section:first-child .footer__section-title img,
@@ -2301,6 +2306,15 @@ html body [class*="torrent-"]{
   --ticket-accent-rgb: 137,180,250;
   --report-accent-rgb: 137,180,250;
   --torrent-accent-rgb: 137,180,250;
+  --upload-accent-rgb: 137,180,250;
+  --section-accent-rgb: 137,180,250;
+  --meta-accent-rgb: 137,180,250;
+  --pm-accent-rgb: 137,180,250;
+  --pm-accent: var(--at-accent);
+  --button-filled-fg: var(--at-bg2);
+  --button-filled-bg: var(--at-accent);
+  --torrent-row-seeders-fg: var(--at-green);
+  --torrent-row-leechers-fg: var(--at-red);
 }
 
 html body .torrent-search-row__type,
@@ -3047,6 +3061,88 @@ html body .forum-reply__title{
 html body section.forum-reply .forum-reply__title i{
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
+}
+
+html body .torrent-upload-page,
+html body [class*="torrent-upload-section--"]{
+  --upload-accent-rgb: 137,180,250 !important;
+  --section-accent-rgb: 137,180,250 !important;
+  --post-accent-rgb: 137,180,250 !important;
+}
+html body .form__button--filled,
+html body .bon-store__button--exchange{
+  color: var(--at-bg2) !important;
+  -webkit-text-fill-color: var(--at-bg2) !important;
+}
+
+html body a.torrent__seeder-count{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+}
+html body a.torrent__leecher-count{
+  color: var(--at-red) !important;
+  -webkit-text-fill-color: var(--at-red) !important;
+}
+html body td.torrent-activity-indicator--seeding,
+html body tr:hover td.torrent-activity-indicator--seeding,
+html body .data-table tbody tr:hover td.torrent-activity-indicator--seeding{
+  background-color: color-mix(in srgb, var(--at-green) 14%, transparent) !important;
+  border-color: color-mix(in srgb, var(--at-green) 35%, transparent) !important;
+}
+html body td.torrent-activity-indicator--leeching,
+html body tr:hover td.torrent-activity-indicator--leeching,
+html body .data-table tbody tr:hover td.torrent-activity-indicator--leeching{
+  background-color: color-mix(in srgb, var(--at-red) 14%, transparent) !important;
+  border-color: color-mix(in srgb, var(--at-red) 35%, transparent) !important;
+}
+html body .settings-card__count--all{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+  background-color: color-mix(in srgb, var(--at-green) 12%, transparent) !important;
+  border-color: color-mix(in srgb, var(--at-green) 35%, transparent) !important;
+}
+
+html body .irc-key__card,
+html body [class*="lostimg-key"][class*="__card"]{
+  background-color: var(--at-bg3) !important;
+  border-color: var(--at-border) !important;
+}
+html body [class*="irc-key__"],
+html body [class*="lostimg-key__"],
+html body .gateway-item,
+html body .gateway-item__label,
+html body .gateway-item__address{
+  color: var(--at-text2) !important;
+}
+html body .irc-key__name,
+html body .irc-key__card-title,
+html body .panel__header.irc-key__header{
+  color: var(--at-text) !important;
+}
+
+html body .panel__header:has(> .donation-sidebar__heading){
+  flex-wrap: wrap !important;
+  row-gap: 2px !important;
+}
+
+html body [class*="page__poker"],
+html body [class*="page__roulette"],
+html body [class*="page__blackjack"],
+html body [class*="page__slots"],
+html body [class*="page__bets"],
+html body [class*="page__casino"]{
+  --poker-green: var(--at-accent) !important;
+  --poker-green-rgb: 137,180,250 !important;
+  --roulette-green: var(--at-accent) !important;
+  --roulette-green-rgb: 137,180,250 !important;
+  --blackjack-green: var(--at-accent) !important;
+  --blackjack-green-rgb: 137,180,250 !important;
+  --slots-green: var(--at-accent) !important;
+  --casino-green: var(--at-accent) !important;
+}
+html body .topic-listings--modern,
+html body [class*="topic-listings"]{
+  --forum-accent-rgb: 137,180,250 !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
