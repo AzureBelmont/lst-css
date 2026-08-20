@@ -3494,3 +3494,23 @@ html body section.torrent-results > nav.pagination{
 html body .torrent-results__list > .torrent-search-row{
   margin: 0 !important;
 }
+
+html body section.forum-reply{
+  background: var(--g-thick) !important;
+  background-color: var(--g-thick) !important;
+  background-image: none !important;
+  backdrop-filter: blur(28px) saturate(170%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(170%) !important;
+  border: 1px solid var(--g-hairline) !important;
+  border-radius: var(--g-radius) !important;
+  box-shadow: var(--g-shadow), var(--g-highlight) !important;
+}
+html body section.forum-reply > .forum-reply__title,
+html body .forum-reply__title{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body section.forum-reply .forum-reply__title i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}

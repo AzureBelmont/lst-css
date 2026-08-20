@@ -3127,6 +3127,24 @@ html body .torrent-results__list > .torrent-search-row{
   margin: 0 !important;
 }
 
+html body section.forum-reply{
+  background: var(--at-bg2) !important;
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12) !important;
+}
+html body section.forum-reply > .forum-reply__title,
+html body .forum-reply__title{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body section.forum-reply .forum-reply__title i{
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+
 
 html body main [class*="__help"],
 html body main [class*="__hint"],
