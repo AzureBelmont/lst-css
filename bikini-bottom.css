@@ -103,13 +103,13 @@ a.user-tag__link i.fa-heart { background-color: transparent !important; border-c
 .alert__statuspage-status a:hover { color: var(--at-accent2) !important; }
 body { background-color: var(--at-bg) !important; color: var(--at-text) !important; }
 .top-nav { background-color: #123653 !important; border-bottom: 1px solid var(--at-accent-faint) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.5) !important; }
-.top-nav .top-nav__branding img { filter: brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(900%) hue-rotate(206deg) brightness(101%) contrast(97%) !important; transition: filter .3s, transform .3s !important; }
-.top-nav .top-nav__branding:hover img { filter: brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(900%) hue-rotate(206deg) brightness(108%) contrast(97%) drop-shadow(0 0 8px rgba(249,226,175,0.7)) !important; transform: scale(1.05) !important; }
-.top-nav__site-logo { background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; -webkit-text-fill-color: var(--at-text) !important; color: var(--at-text) !important; font-weight: 700 !important; }
+.top-nav .top-nav__branding img { filter: brightness(0) saturate(100%) invert(75%) sepia(99%) saturate(100%) hue-rotate(3deg) brightness(99%) contrast(100%) !important; transition: filter .3s, transform .3s !important; }
+.top-nav .top-nav__branding:hover img { filter: brightness(0) saturate(100%) invert(75%) sepia(99%) saturate(100%) hue-rotate(3deg) brightness(107%) contrast(100%) drop-shadow(0 0 8px rgba(249,226,175,0.7)) !important; transform: scale(1.05) !important; }
+.top-nav__site-logo { background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; -webkit-text-fill-color: var(--at-accent) !important; color: var(--at-accent) !important; font-weight: 700 !important; }
 .top-nav__dropdown--nontouch { border-radius: 0px !important; }
 .footer__section:first-child .footer__section-title { color: var(--at-text) !important; display: flex !important; align-items: center !important; gap: 8px !important; font-size: inherit !important; font-weight: inherit !important; text-transform: none !important; letter-spacing: normal !important; }
-.footer .footer__section:first-child .footer__section-title img { filter: brightness(0) saturate(100%) invert(72%) sepia(30%) saturate(900%) hue-rotate(206deg) brightness(101%) contrast(97%) !important; height: 28px !important; width: auto !important; }
-.footer__section:first-child .footer__section-title .top-nav__site-logo { background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; -webkit-text-fill-color: var(--at-text) !important; color: var(--at-text) !important; font-size: 15px !important; font-weight: 700 !important; letter-spacing: .05em !important; }
+.footer .footer__section:first-child .footer__section-title img { filter: brightness(0) saturate(100%) invert(75%) sepia(99%) saturate(100%) hue-rotate(3deg) brightness(99%) contrast(100%) !important; height: 28px !important; width: auto !important; }
+.footer__section:first-child .footer__section-title .top-nav__site-logo { background: none !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; -webkit-text-fill-color: var(--at-accent) !important; color: var(--at-accent) !important; font-size: 15px !important; font-weight: 700 !important; letter-spacing: .05em !important; }
 html:has(main[class*="page__torrent-"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__subtitle"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
 html:has(main[class*="page__mediahub"]) .top-nav--left__list-item:has(a[href="https://lst.gg/torrents"]) > a,
@@ -1229,6 +1229,8 @@ html body {
 }
 html body main > article {
   background-color: rgba(7,26,46,0.86) !important;
+  border: 1px solid rgba(180,215,240,0.16) !important;
+  border-radius: 14px !important;
 }
 html body section.panelV2,
 html body .panel__body,
@@ -3367,6 +3369,7 @@ html body [class*="__select"],
 html body [class*="__input"]{
   color-scheme: dark;
 }
+
 
 html body img[src$="/img/profile.png"]{
   content: url("https://lostimg.cc/tPG9pIxb.png") !important;
