@@ -1720,7 +1720,9 @@ html body img[class].top-nav__profile-image,
 html body .top-nav__profile-image,
 html body img.chatV2__avatar,
 html body .chatV2__avatar,
-html body .chatV2__message img,
+html body img.chatV2__userIcon,
+html body img.chatV2__replyAvatar,
+html body .chatV2__messageAvatar img,
 html body .chatbox-message__aside img{
   border-radius: 50% !important;
   object-fit: cover !important;
