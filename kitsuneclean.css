@@ -1967,6 +1967,7 @@ html body [class*="torrent-"]{
   --button-filled-fg: var(--k-accent);
   --button-filled-bg: transparent;
   --button-filled-border: 1px solid var(--k-accent);
+  --dialog-bg: var(--k-bg2);
   --torrent-row-seeders-fg: var(--k-matcha);
   --torrent-row-leechers-fg: var(--k-torii);
 }
@@ -2867,6 +2868,93 @@ html body .topic-list__footer .pagination__link:hover{
   background-color: var(--k-accent-faint) !important;
   color: var(--k-accent) !important;
   -webkit-text-fill-color: var(--k-accent) !important;
+}
+
+html body dialog.dialog .dialog__body,
+html body .dialog__body{
+  background: var(--k-bg2) !important;
+  background-color: var(--k-bg2) !important;
+  background-image: none !important;
+}
+html body dialog.dialog .dialog__footer,
+html body .dialog__footer{
+  background: var(--k-bg3) !important;
+  background-color: var(--k-bg3) !important;
+  background-image: none !important;
+  border-top: 1px solid var(--k-border) !important;
+}
+
+:root,
+html body{
+  --body-bg: var(--k-bg);
+  --panel-bg: var(--k-bg2);
+  --dialog-bg: var(--k-bg2);
+  --bbcode-input-body-bg: var(--k-bg2);
+  --compact-search-bg: var(--k-bg2);
+  --torrent-card-bg: var(--k-bg2);
+  --alert-bg: var(--k-bg2);
+  --secondary-nav-bg: var(--k-bg2);
+  --post-bg: var(--k-bg2);
+  --achievement-bg: var(--k-bg2);
+  --article-card-bg: var(--k-bg2);
+  --chatbox-users-bg: var(--k-bg2);
+  --bet-bg-item: var(--k-bg2);
+  --bet-bg-alt: var(--k-bg2);
+  --donation-background-color: var(--k-bg2);
+  --top-nav-bg: var(--k-bg2);
+  --top-nav-dropdown-menu-bg: var(--k-bg2);
+  --data-table-tr-odd-bg: var(--k-bg2);
+  --key-value-odd-bg: var(--k-bg2);
+
+  --panel-head-bg: var(--k-bg3);
+  --dialog-head-bg: var(--k-bg3);
+  --paginate-bg: var(--k-bg3);
+  --paginate-bg-current: var(--k-bg3);
+  --torrent-card-head-bg: var(--k-bg3);
+  --torrent-group-bg: var(--k-bg3);
+  --post-toolbar-bg: var(--k-bg3);
+  --bbcode-input-header-bg: var(--k-bg3);
+  --collectible-card-bg: var(--k-bg3);
+  --mediahub-card-bg: var(--k-bg3);
+  --meta-popup-bg: var(--k-bg3);
+  --user-stat-card-bg: var(--k-bg3);
+  --bet-bg: var(--k-bg3);
+  --playlist-card-missing-image-bg: var(--k-bg3);
+
+  --data-table-tr-even-bg: var(--k-bg3);
+  --key-value-even-bg: var(--k-bg3);
+  --subforum-listing-odd-bg: var(--k-bg3);
+  --data-table-th-bg: var(--k-bg3);
+  --option-bg: var(--k-bg3);
+  --torrent-group-header-bg: var(--k-bg3);
+  --bbcode-rendered-canvas-subtle: var(--k-bg3);
+  --chatbox-message-bg: var(--k-bg3);
+  --post-aside-bg: var(--k-bg3);
+  --torrent-row-format-bg: var(--k-bg3);
+  --top-nav-icon-bar-icon-bg: var(--k-bg3);
+  --top-nav-dropdown-menu-item-icon-bg: var(--k-bg3);
+  --meter-bg: var(--k-bg3);
+
+  --data-table-tr-hover-bg: color-mix(in srgb, var(--k-bg3) 88%, var(--k-text));
+  --post-toolbar-hover-bg: var(--k-accent-faint);
+  --top-nav-dropdown-hover-bg: var(--k-accent-faint);
+  --top-nav-dropdown-menu-item-hover-bg: var(--k-accent-faint);
+  --top-nav-icon-bar-icon-hover-bg: var(--k-accent-faint);
+  --quick-search-selector-hover-bg: var(--k-accent-faint);
+  --bet-bg-active: var(--k-accent-faint);
+
+  --torrent-row-sticky-bg: color-mix(in srgb, var(--k-bg2) 85%, #000);
+  --paginate-divider: var(--k-border);
+  --donation-border-color: var(--k-border);
+
+  --torrent-group-text-muted: var(--k-text2);
+  --quick-search-fg: var(--k-text2);
+  --quick-search-selector-fg: var(--k-text2);
+  --top-nav-icon-bar-icon-hover-fg: var(--k-text2);
+  --playlist-card-missing-image-fg: var(--k-text2);
+
+  --chatv2-bg: var(--k-bg2);
+  --panel-fg: var(--k-text);
 }
 
 html body nav.top-nav{ background: var(--k-bg2) !important; background-color: var(--k-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
