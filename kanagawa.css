@@ -1191,6 +1191,9 @@ html body dialog::backdrop{
 :root{
   accent-color: var(--at-accent);
 }
+:root, html, html body { color-scheme: dark; }
+html body select, html body input, html body textarea, html body button,
+html body [class*="__select"], html body [class*="__input"] { color-scheme: dark; }
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
@@ -3285,6 +3288,22 @@ html body{
 
   --chatv2-bg: var(--at-bg2);
   --panel-fg: var(--at-text);
+}
+
+:root,
+html,
+html body{
+  color-scheme: dark;
+}
+html body select,
+html body input,
+html body textarea,
+html body button,
+html body .chatV2__meStatusSelect,
+html body .chatV2__settingsSelect,
+html body [class*="__select"],
+html body [class*="__input"]{
+  color-scheme: dark;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
