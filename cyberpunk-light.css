@@ -1295,182 +1295,6 @@ html body dialog::backdrop{
 :root, html, html body { color-scheme: light; }
 html body select, html body input, html body textarea, html body button,
 html body [class*="__select"], html body [class*="__input"] { color-scheme: light; }
-html body{
-  background-color: var(--at-bg) !important;
-  background-image:
-    repeating-linear-gradient(180deg, color-mix(in srgb, var(--at-accent) 5%, transparent) 0 1px, rgba(0,0,0,0) 1px 3px),
-    radial-gradient(130% 70% at 50% 0%, color-mix(in srgb, var(--at-accent) 9%, transparent) 0%, rgba(0,0,0,0) 62%) !important;
-  background-repeat: repeat, no-repeat !important;
-  background-size: auto, cover !important;
-  background-attachment: fixed, fixed !important;
-}
-:root{
-  --quick-search-border-radius: 0;
-  --color-links-hover:            var(--at-accent2);
-  --breadcrumb-hover-fg:          var(--at-accent2);
-  --post-toolbar-hover-fg:        var(--at-accent2);
-  --label-fg:                     var(--at-accent2);
-  --label-fg-active:              var(--at-accent2);
-  --breadcrumb-fg:                var(--at-accent2);
-}
-html body .quick-search__input,
-html body input.quick-search__input,
-html body .quick-search:active .quick-search__input,
-html body .quick-search:focus-within .quick-search__input,
-html body .quick-search__results{
-  border-radius: 0!important;
-}
-html body table.data-table thead th,
-html body table.data-table thead th a,
-html body table.data-table thead th button,
-html body .torrent-results__sort-bar,
-html body .torrent-results__sort-bar button.torrent-results__sort-btn,
-html body .torrent-results__sort-bar [class*="sort-btn"],
-html body .torrent-search--list__header{
-  color: var(--at-accent2) !important;
-  -webkit-text-fill-color: var(--at-accent2) !important;
-  letter-spacing: .06em !important;
-}
-html body section.panelV2,
-html body .blocks__block,
-html body article.post,
-html body section.torrent-results,
-html body section.topic-list,
-html body section.report-list{
-  border-top: 2px solid color-mix(in srgb, var(--at-accent) 55%, transparent) !important;
-}
-html body section.panelV2,
-html body section.torrent-results{
-  background-color: transparent !important;
-  background-image: linear-gradient(315deg, transparent 18px, var(--at-bg2) 18px) !important;
-}
-html body .form__button,
-html body button.form__button,
-html body a.form__button,
-html body .torrent__download,
-html body .form__button--filled,
-html body .form__button--outlined{
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%) !important;
-  border-radius: 0!important;
-}
-html body .form__button:hover,
-html body button.form__button:hover,
-html body a.form__button:hover{
-  border-color: var(--at-accent2) !important;
-  color: var(--at-accent2) !important;
-  -webkit-text-fill-color: var(--at-accent2) !important;
-  box-shadow: 0 0 10px color-mix(in srgb, var(--at-accent2) 35%, transparent) !important;
-}
-html body *:focus-visible{
-  outline: 2px solid var(--at-accent2) !important;
-  outline-offset: 1px !important;
-}
-html body .panel__heading{
-  border-left: 3px solid var(--at-accent) !important;
-  text-transform: uppercase !important;
-}
-html body .torrent-results__title{
-  padding-left: 10px !important;
-}
-html body .panel__header,
-html body .torrent-reviews__header,
-html body .topic-list__header,
-html body .pm-thread__header,
-html body .forum-category__header,
-html body .report-list__header,
-html body .settings-section__header,
-html body .settings-card__header,
-html body .privacy-category__header,
-html body .dialog__header{
-  border-left: 3px solid var(--at-accent) !important;
-  text-transform: uppercase !important;
-}
-html body *:not(#_){
-  border-radius: 0!important;
-}
-html body .chatbox-message__aside img:not(#_),
-html body .user-stat-card__avatar:not(#_),
-html body .chatV2__avatar:not(#_),
-html body img.chatV2__avatar:not(#_),
-html body img[class*="avatar" i]:not(#_),
-html body [class$="__avatar"]:not(#_),
-html body [class*="__avatar "]:not(#_),
-html body .vscomp-clear-button:not(#_),
-html body .vscomp-search-clear:not(#_),
-html body .vscomp-dropbox-close-button:not(#_){
-  border-radius: 50% !important;
-}
-html body footer.footer,
-html body footer.footer p,
-html body footer.footer li,
-html body footer.footer span,
-html body footer.footer strong,
-html body > footer,
-html body > footer p,
-html body > footer span,
-html body > footer strong{
-  color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
-}
-html body footer.footer a,
-html body > footer a{
-  color: var(--at-accent2) !important;
-  -webkit-text-fill-color: var(--at-accent2) !important;
-}
-html body ::placeholder{
-  color: color-mix(in srgb, var(--at-text2) 85%, var(--at-bg)) !important;
-  opacity: 1 !important;
-}
-html body .bbcode-input__tab-label{
-  color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
-}
-html body input:checked + .bbcode-input__tab-label,
-html body .bbcode-input__tab-label--active{
-  color: var(--at-accent) !important;
-  -webkit-text-fill-color: var(--at-accent) !important;
-}
-html body .forum-item__title,
-html body .forum-item__title a,
-html body .forum-item__latest-title,
-html body .forum-item__latest a,
-html body .topic-item__title,
-html body .topic-item__title a{
-  color: var(--at-accent2) !important;
-  -webkit-text-fill-color: var(--at-accent2) !important;
-}
-html body .forum-item__stat-label,
-html body .forum-hero__stat-label,
-html body .profile-stat-card__label{
-  color: var(--at-text2) !important;
-  -webkit-text-fill-color: var(--at-text2) !important;
-}
-html body .forum-item__stat-value,
-html body .forum-hero__stat-value,
-html body .profile-stat-card__value{
-  color: var(--at-text) !important;
-  -webkit-text-fill-color: var(--at-text) !important;
-}
-@keyframes cp-glitch{
-  0%       { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
-  10%      { clip-path: inset(14% 0 66% 0); transform: translate(-3px,0); }
-  20%      { clip-path: inset(56% 0 24% 0); transform: translate(3px,0); }
-  30%      { clip-path: inset(30% 0 46% 0); transform: translate(-2px,1px); }
-  40%      { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
-  55%      { clip-path: inset(72% 0 10% 0); transform: translate(3px,-1px); }
-  65%      { clip-path: inset(22% 0 58% 0); transform: translate(-3px,0); }
-  75%      { clip-path: inset(46% 0 34% 0); transform: translate(2px,0); }
-  85%,100% { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
-}
-html body .top-nav__branding:hover,
-html body a.top-nav__branding:hover{
-  animation: cp-glitch .5s steps(1) 2 !important;
-  filter: drop-shadow(2px 0 0 var(--at-accent2)) drop-shadow(-2px 0 0 var(--at-red)) !important;
-}
-@media (prefers-reduced-motion: reduce) {
-html body .top-nav__branding:hover,
-  html body a.top-nav__branding:hover{ animation: none !important; }
-}
 
 html body .quick-search__inputs{ background: rgba(0,0,0,0.05) !important; background-color: rgba(0,0,0,0.05) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0!important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
@@ -3912,19 +3736,24 @@ html body .profile-stat-card__value{
 }
 
 @keyframes cp-glitch{
-  0%       { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
-  10%      { clip-path: inset(14% 0 66% 0); transform: translate(-3px,0); }
-  20%      { clip-path: inset(56% 0 24% 0); transform: translate(3px,0); }
-  30%      { clip-path: inset(30% 0 46% 0); transform: translate(-2px,1px); }
-  40%      { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
-  55%      { clip-path: inset(72% 0 10% 0); transform: translate(3px,-1px); }
-  65%      { clip-path: inset(22% 0 58% 0); transform: translate(-3px,0); }
-  75%      { clip-path: inset(46% 0 34% 0); transform: translate(2px,0); }
-  85%,100% { clip-path: inset(0 0 0 0);     transform: translate(0,0); }
+  0%       { clip-path: inset(0 0 0 0);     transform: translate(0,0) scale(1.04); }
+  10%      { clip-path: inset(14% 0 66% 0); transform: translate(-3px,0) scale(1.04); }
+  20%      { clip-path: inset(56% 0 24% 0); transform: translate(3px,0) scale(1.04); }
+  30%      { clip-path: inset(30% 0 46% 0); transform: translate(-2px,1px) scale(1.04); }
+  40%      { clip-path: inset(0 0 0 0);     transform: translate(0,0) scale(1.04); }
+  55%      { clip-path: inset(72% 0 10% 0); transform: translate(3px,-1px) scale(1.04); }
+  65%      { clip-path: inset(22% 0 58% 0); transform: translate(-3px,0) scale(1.04); }
+  75%      { clip-path: inset(46% 0 34% 0); transform: translate(2px,0) scale(1.04); }
+  85%,100% { clip-path: inset(0 0 0 0);     transform: translate(0,0) scale(1.04); }
+}
+html body .top-nav__branding:hover img,
+html body a.top-nav__branding:hover img{
+  transform: none !important;
 }
 html body .top-nav__branding:hover,
 html body a.top-nav__branding:hover{
   animation: cp-glitch .5s steps(1) 2 !important;
+  transform: scale(1.04) !important;
   filter: drop-shadow(2px 0 0 var(--at-accent2)) drop-shadow(-2px 0 0 var(--at-red)) !important;
 }
 @media (prefers-reduced-motion: reduce){
