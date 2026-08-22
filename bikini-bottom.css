@@ -1311,15 +1311,14 @@ html body > footer,
 html body footer.footer {
   background-color: rgba(7,26,46,0.92) !important;
 }
-html body .panelV2.chatbox{
+html body .panelV2.chatbox,
+html body section.panelV2.chatV2{
   background-color: rgba(13,39,66,0.55) !important;
   background-image: none !important;
 }
 html body .panelV2.chatbox .panel__body,
 html body .panelV2.chatbox .panel__body > *,
-html body .panelV2.chatbox [class*="chatbox"][class*="__body"],
-html body .panelV2.chatbox [class*="message-list"],
-html body .panelV2.chatbox [class*="__messages"]{
+html body section.panelV2.chatV2 .panel__body{
   background-color: transparent !important;
   background-image: none !important;
 }
@@ -1327,6 +1326,17 @@ html body .panelV2.chatbox .panel__header,
 html body #chatbox_header{
   background-color: rgba(18,54,83,0.62) !important;
   background-image: none !important;
+}
+html body .chatV2__barSurface,
+html body .chatV2__columnHeader,
+html body .chatV2__footerDock,
+html body .chatV2__sidebarBrand,
+html body .chatV2__sidebarFooter,
+html body .chatV2__threadHeader,
+html body .chatV2__mePanel,
+html body .chatV2__composer,
+html body .chatV2__composerSurface{
+  background-color: rgba(18,54,83,0.45) !important;
 }
 html body article.chatbox-message{
   background-color: transparent !important;
@@ -3469,3 +3479,46 @@ html body img[src$="/img/profile.png"]{
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
+
+html body .panelV2.chatbox,
+html body section.panelV2.chatV2{
+  background-color: rgba(13,39,66,0.55) !important;
+  background-image: none !important;
+}
+html body .panelV2.chatbox .panel__body,
+html body .panelV2.chatbox .panel__body > *,
+html body section.panelV2.chatV2 .panel__body{
+  background-color: transparent !important;
+  background-image: none !important;
+}
+html body .panelV2.chatbox .panel__header,
+html body #chatbox_header{
+  background-color: rgba(18,54,83,0.62) !important;
+  background-image: none !important;
+}
+html body .chatV2__barSurface,
+html body .chatV2__columnHeader,
+html body .chatV2__footerDock,
+html body .chatV2__sidebarBrand,
+html body .chatV2__sidebarFooter,
+html body .chatV2__threadHeader,
+html body .chatV2__mePanel,
+html body .chatV2__composer,
+html body .chatV2__composerSurface{
+  background-color: rgba(18,54,83,0.45) !important;
+}
+html body article.chatbox-message{
+  background-color: transparent !important;
+}
+html body article.chatbox-message:hover{
+  background-color: rgba(249,226,175,0.06) !important;
+}
+html body .panelV2.chatbox .form__group input.form__text,
+html body .panelV2.chatbox textarea,
+html body .panelV2.chatbox input[type="text"]{
+  background-color: rgba(7,26,46,0.72) !important;
+}
+html body:not(#_){
+  --chatbox-message-bg: transparent;
+  --chatbox-users-bg: rgba(13,39,66,0.55);
+}
