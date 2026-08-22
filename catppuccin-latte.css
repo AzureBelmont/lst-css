@@ -499,9 +499,9 @@ h2.meta__heading { margin-top: 0 !important; margin-bottom: 0 !important; }
 .footer__icons a[href*="rust-lang"] svg { filter: brightness(0) opacity(0.55) !important; }
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: var(--at-bg); }
-::-webkit-scrollbar-thumb { background: var(--at-bg3); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(136,57,239,0.4); }
-html { scrollbar-width: thin !important; scrollbar-color: var(--at-bg3) var(--at-bg) !important; }
+::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--at-accent) 50%, var(--at-bg)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--at-accent) 75%, var(--at-bg)); }
+html { scrollbar-width: thin !important; scrollbar-color: color-mix(in srgb, var(--at-accent) 50%, var(--at-bg)) var(--at-bg) !important; }
 [style*="color:#95A5A6"],[style*="color: #95A5A6"] { color: #95A5A6 !important; }
 [style*="color:#5E372F"],[style*="color: #5E372F"] { color: #5E372F !important; }
 [style*="color:#6cdb9b"],[style*="color: #6cdb9b"] { color: #6cdb9b !important; }
@@ -1314,6 +1314,62 @@ html body dialog::backdrop{
 :root, html, html body { color-scheme: light; }
 html body select, html body input, html body textarea, html body button,
 html body [class*="__select"], html body [class*="__input"] { color-scheme: light; }
+html body .bbcode-rendered,
+html body .bbcode-rendered p,
+html body .bbcode-rendered li,
+html body .bbcode-rendered td,
+html body .chatbox-message__content,
+html body .comment__content,
+html body .post__content,
+html body .torrent-card__plot,
+html body .torrent-card__body,
+html body .media__title,
+html body div.top-nav--left__container,
+html body main summary,
+html body main cite{
+  color: var(--at-text) !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+}
+html body a.torrent-card__link,
+html body a.torrent-card__genre,
+html body a.torrent-search--list__name,
+html body a.topic-listing__created-link,
+html body a.topic-listing__latest-author-link,
+html body a.topic-listing__latest-post-link,
+html body a.torrent__times-completed-count,
+html body li.topic-tag,
+html body main a:not([class]):not([style]){
+  color: var(--at-accent) !important;
+  -webkit-text-fill-color: var(--at-accent) !important;
+}
+html body main dd,
+html body main dt,
+html body main time,
+html body main figcaption,
+html body main b,
+html body main small,
+html body h4[class*="stat"],
+html body time[class*="datetime"],
+html body time[class*="join-date"],
+html body figcaption.topic-listing__forum{
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+}
+html body a.torrent__seeder-count,
+html body a.torrent__seeder-count i,
+html body .text-success{
+  color: var(--at-green) !important;
+  -webkit-text-fill-color: var(--at-green) !important;
+}
+html body a.torrent__leecher-count,
+html body .text-danger{
+  color: var(--at-red) !important;
+  -webkit-text-fill-color: var(--at-red) !important;
+}
+html body .text-warning{
+  color: var(--at-accent2) !important;
+  -webkit-text-fill-color: var(--at-accent2) !important;
+}
 
 html body .quick-search__inputs{ background: rgba(0,0,0,0.05) !important; background-color: rgba(0,0,0,0.05) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
