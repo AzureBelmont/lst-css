@@ -1896,9 +1896,14 @@ html body .blocks__random-media .panel__heading i{
   -webkit-text-fill-color: var(--at-accent) !important;
 }
 
-html body .topic-item__indicator,
+html body .topic-item--unread .topic-item__indicator,
 html body .topic-listing__indicator{
   background-color: var(--at-accent) !important;
+  background-image: none !important;
+}
+html body .topic-item--read .topic-item__indicator,
+html body [class*="topic-"][class*="--read"] [class*="__indicator"]{
+  background-color: var(--at-text3) !important;
   background-image: none !important;
 }
 html body .topic-listing__figure,
