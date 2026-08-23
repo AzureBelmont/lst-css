@@ -1042,7 +1042,7 @@ html body .raffle-stat-card--primary{
 
 html body .profile-stat-card--clickable:hover,
 html body .profile-mini-stat--clickable:hover{
-  background-color: var(--k-accent-faint) !important;
+  background-color: color-mix(in srgb, var(--k-accent) 18%, var(--k-bg3)) !important;
   border: 1px solid var(--k-accent) !important;
 }
 
