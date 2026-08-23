@@ -1459,10 +1459,14 @@ html body .raffle-lobby__balance{
 }
 
 html body .profile-stat-card--accent,
-html body .profile-stat-card--clickable:hover,
-html body .profile-mini-stat--clickable:hover,
 html body .bets-page__tab--active,
 html body .raffle-stat-card--primary{
+  background-color: color-mix(in srgb, var(--at-accent) 12%, var(--at-bg3)) !important;
+  border: 1px solid var(--at-accent) !important;
+}
+
+html body .profile-stat-card--clickable:hover,
+html body .profile-mini-stat--clickable:hover{
   background-color: var(--at-accent-faint) !important;
   border: 1px solid var(--at-accent) !important;
 }
