@@ -1347,9 +1347,11 @@ html body .bbcode-input,
 html body .bbcode-input__tabs,
 html body .bbcode-input__input,
 html body .form__textarea,
-html body .post__content.bbcode-rendered,
 html body .bbcode-rendered{
   border-radius: var(--at-radius) !important;
+}
+html body article.post > .post__content.bbcode-rendered{
+  border-radius: 0 0 var(--at-radius) 0 !important;
 }
 html body .bbcode-input__tabs{ overflow: hidden !important; }
 html body nav.pagination{ background-color: transparent !important; border: none !important; }
@@ -4124,3 +4126,36 @@ html body [class*="__view-btn--active"] i{
 html body .footer__section-title:has(.top-nav__site-logo)::before{
   background-image: url("https://lostimg.cc/zS68LyBa.png") !important;
 }
+
+html body a[style*="color:#f39c12"],
+html body a[style*="color: #f39c12"],
+html body a[style*="color:#F39C12"],
+html body a[style*="color: #F39C12"]{ color: #a66908 !important; }
+html body a[style*="color:#d6b0a1"],
+html body a[style*="color: #d6b0a1"],
+html body a[style*="color:#D6B0A1"],
+html body a[style*="color: #D6B0A1"]{ color: #a9654a !important; }
+html body a[style*="color:#4fa3ff"],
+html body a[style*="color: #4fa3ff"],
+html body a[style*="color:#4FA3FF"],
+html body a[style*="color: #4FA3FF"]{ color: #0072f0 !important; }
+html body a[style*="color:#f3b35c"],
+html body a[style*="color: #f3b35c"],
+html body a[style*="color:#F3B35C"],
+html body a[style*="color: #F3B35C"]{ color: #aa670d !important; }
+html body a[style*="color:#d97b6c"],
+html body a[style*="color: #d97b6c"],
+html body a[style*="color:#D97B6C"],
+html body a[style*="color: #D97B6C"]{ color: #cc4c38 !important; }
+html body a[style*="color:#f1c40f"],
+html body a[style*="color: #f1c40f"],
+html body a[style*="color:#F1C40F"],
+html body a[style*="color: #F1C40F"]{ color: #8e7408 !important; }
+html body a[style*="color:#3fbfc3"],
+html body a[style*="color: #3fbfc3"],
+html body a[style*="color:#3FBFC3"],
+html body a[style*="color: #3FBFC3"]{ color: #2a8285 !important; }
+html body a[style*="color:#bfc6d1"],
+html body a[style*="color: #bfc6d1"],
+html body a[style*="color:#BFC6D1"],
+html body a[style*="color: #BFC6D1"]{ color: #687790 !important; }

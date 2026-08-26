@@ -1146,9 +1146,11 @@ html body .bbcode-input,
 html body .bbcode-input__tabs,
 html body .bbcode-input__input,
 html body .form__textarea,
-html body .post__content.bbcode-rendered,
 html body .bbcode-rendered{
   border-radius: var(--at-radius) !important;
+}
+html body article.post > .post__content.bbcode-rendered{
+  border-radius: 0 0 var(--at-radius) 0 !important;
 }
 html body .bbcode-input__tabs{ overflow: hidden !important; }
 html body .quick-search{ pointer-events: none !important; }
@@ -3685,5 +3687,50 @@ html body [class*="__view-btn--active"] i{
 html body .footer__section-title:has(.top-nav__site-logo)::before{
   background-image: url("https://lostimg.cc/zS68LyBa.png") !important;
 }
+
+html body a[style*="color:#f39c12"],
+html body a[style*="color: #f39c12"],
+html body a[style*="color:#F39C12"],
+html body a[style*="color: #F39C12"]{ color: #945d07 !important; }
+html body a[style*="color:#d6b0a1"],
+html body a[style*="color: #d6b0a1"],
+html body a[style*="color:#D6B0A1"],
+html body a[style*="color: #D6B0A1"]{ color: #965942 !important; }
+html body a[style*="color:#4fa3ff"],
+html body a[style*="color: #4fa3ff"],
+html body a[style*="color:#4FA3FF"],
+html body a[style*="color: #4FA3FF"]{ color: #0065d5 !important; }
+html body a[style*="color:#5a9e1a"],
+html body a[style*="color: #5a9e1a"],
+html body a[style*="color:#5A9E1A"],
+html body a[style*="color: #5A9E1A"]{ color: #437513 !important; }
+html body a[style*="color:#f3b35c"],
+html body a[style*="color: #f3b35c"],
+html body a[style*="color:#F3B35C"],
+html body a[style*="color: #F3B35C"]{ color: #975b0b !important; }
+html body a[style*="color:#d97b6c"],
+html body a[style*="color: #d97b6c"],
+html body a[style*="color:#D97B6C"],
+html body a[style*="color: #D97B6C"]{ color: #b7422f !important; }
+html body a[style*="color:#1a9b94"],
+html body a[style*="color: #1a9b94"],
+html body a[style*="color:#1A9B94"],
+html body a[style*="color: #1A9B94"]{ color: #147570 !important; }
+html body a[style*="color:#f1c40f"],
+html body a[style*="color: #f1c40f"],
+html body a[style*="color:#F1C40F"],
+html body a[style*="color: #F1C40F"]{ color: #7e6707 !important; }
+html body a[style*="color:#3fbfc3"],
+html body a[style*="color: #3fbfc3"],
+html body a[style*="color:#3FBFC3"],
+html body a[style*="color: #3FBFC3"]{ color: #257376 !important; }
+html body a[style*="color:#2f9fb0"],
+html body a[style*="color: #2f9fb0"],
+html body a[style*="color:#2F9FB0"],
+html body a[style*="color: #2F9FB0"]{ color: #227380 !important; }
+html body a[style*="color:#bfc6d1"],
+html body a[style*="color: #bfc6d1"],
+html body a[style*="color:#BFC6D1"],
+html body a[style*="color: #BFC6D1"]{ color: #5c6a81 !important; }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
