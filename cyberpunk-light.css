@@ -1800,6 +1800,24 @@ html body .bon-pool__progress-bar{
   background-image: none !important;
 }
 
+html body .footer__section-title:has(.top-nav__site-logo){
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin-bottom: 16px !important;
+}
+html body .footer__section-title:has(.top-nav__site-logo) img,
+html body .footer__section-title .top-nav__site-logo{
+  display: none !important;
+}
+html body .footer__section-title:has(.top-nav__site-logo)::before{
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 260px !important;
+  aspect-ratio: 2144 / 1120 !important;
+  background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
+}
+
 :root,
 html body,
 html body main,
@@ -3643,6 +3661,10 @@ html body .torrent-results__view-btn--active i,
 html body [class*="__view-btn--active"],
 html body [class*="__view-btn--active"] i{
   color: #FFFFFF !important;
+}
+
+html body .footer__section-title:has(.top-nav__site-logo)::before{
+  background-image: url("https://lostimg.cc/zS68LyBa.png") !important;
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

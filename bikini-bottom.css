@@ -1802,6 +1802,24 @@ html body .bon-pool__progress-bar{
   background-image: none !important;
 }
 
+html body .footer__section-title:has(.top-nav__site-logo){
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin-bottom: 16px !important;
+}
+html body .footer__section-title:has(.top-nav__site-logo) img,
+html body .footer__section-title .top-nav__site-logo{
+  display: none !important;
+}
+html body .footer__section-title:has(.top-nav__site-logo)::before{
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 260px !important;
+  aspect-ratio: 2144 / 1120 !important;
+  background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
+}
+
 :root,
 html body,
 html body main,
