@@ -1147,7 +1147,7 @@ html body .bbcode-rendered{
   border-radius: var(--at-radius) !important;
 }
 html body article.post > .post__content.bbcode-rendered{
-  border-radius: 0 0 var(--at-radius) 0 !important;
+  border-radius: 0 !important;
 }
 html body .bbcode-input__tabs{ overflow: hidden !important; }
 html body .quick-search{ pointer-events: none !important; }
@@ -1816,6 +1816,12 @@ html body .bon-pool__progress-bar-container{
 html body .bon-pool__progress-bar{
   background-color: var(--at-accent) !important;
   background-image: none !important;
+}
+
+html body .alert__content .badge{
+  background-color: var(--at-accent) !important;
+  color: #ffffff !important;
+  border-radius: var(--at-radius) !important;
 }
 
 html body .footer__section-title:has(.top-nav__site-logo){
