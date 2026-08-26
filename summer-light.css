@@ -1919,6 +1919,11 @@ html body .footer__section-title:has(.top-nav__site-logo)::before{
   background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
 }
 
+html body .chatV2__composer > .chatV2__composerSurface{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
 :root,
 html body,
 html body main,
