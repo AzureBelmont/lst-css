@@ -1227,7 +1227,7 @@ html body {
     linear-gradient(180deg, rgba(24,10,23,0.58) 0%, rgba(20,8,20,0.66) 60%, rgba(16,6,16,0.74) 100%),
     url("https://lostimg.cc/jLUpRgLL.png") !important;
   background-size: cover, cover !important;
-  background-position: center top, center top !important;
+  background-position: center top, center center !important;
   background-repeat: no-repeat, no-repeat !important;
   background-attachment: fixed, fixed !important;
 }
