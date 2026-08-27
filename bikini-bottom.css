@@ -1267,6 +1267,12 @@ html body main > article:has(> .torrent-search__component) {
   border: 0 !important;
 }
 html body main > article > .torrent-search__component {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+html body .compact-search__visible-default,
+html body search > div,
+html body .torrent-search__filters > div{
   background-color: rgba(7,26,46,0.86) !important;
   border: 1px solid rgba(180,215,240,0.16) !important;
   border-radius: 14px !important;
@@ -1481,6 +1487,10 @@ html body .rating__add-rating--stars input:checked + label::after{
 }
 html body .rating__add-rating--stars:hover input:checked ~ label{
   color: rgba(250,204,21,0.42) !important;
+}
+html body main{
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
