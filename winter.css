@@ -1320,6 +1320,23 @@ html body .comment__replies,
 html body li.comment__list-item{
   background-color: transparent !important;
 }
+html body .rating__add-rating--stars label{
+  position: relative !important;
+}
+html body .rating__add-rating--stars input:checked + label::after{
+  content: "" !important;
+  position: absolute !important;
+  left: 12% !important;
+  right: 12% !important;
+  bottom: -3px !important;
+  height: 2px !important;
+  border-radius: 1px !important;
+  background: var(--at-accent) !important;
+  pointer-events: none !important;
+}
+html body .rating__add-rating--stars:hover input:checked ~ label{
+  color: rgba(250,204,21,0.42) !important;
+}
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
