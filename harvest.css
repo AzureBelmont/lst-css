@@ -1184,6 +1184,7 @@ html body ::selection{
 html body input:-webkit-autofill,
 html body input:-webkit-autofill:hover,
 html body input:-webkit-autofill:focus,
+html body input:-webkit-autofill:active,
 html body textarea:-webkit-autofill,
 html body select:-webkit-autofill{
   -webkit-box-shadow: 0 0 0 1000px var(--at-bg2) inset !important;
@@ -1267,6 +1268,17 @@ html body::after{
 @media (prefers-reduced-motion: reduce) {
 html body::before,
   html body::after{ animation: none !important; }
+}
+html body .form__text,
+html body .form__text:hover,
+html body .form__text:focus,
+html body .form__text:focus-visible,
+html body textarea.form__textarea:focus,
+html body input.form__text:-webkit-autofill:active{
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+  -webkit-text-fill-color: var(--at-text) !important;
+  transition: none !important;
 }
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
