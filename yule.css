@@ -1322,6 +1322,32 @@ html body input.form__text:-webkit-autofill:active{
   -webkit-text-fill-color: var(--at-text) !important;
   transition: none !important;
 }
+:root{
+  --post-head-bg: var(--at-bg3);
+  --post-head-fg: var(--at-text2);
+}
+html body article.rating{
+  background-color: var(--at-bg2) !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+  overflow: hidden !important;
+}
+html body .rating__header{
+  background-color: var(--at-bg3) !important;
+  color: var(--at-text2) !important;
+  -webkit-text-fill-color: var(--at-text2) !important;
+  border-bottom: 1px solid var(--at-border) !important;
+  border-radius: 0 !important;
+}
+html body article.rating > .comment__content.bbcode-rendered,
+html body article.rating > .comment__aside{
+  background-color: var(--at-bg) !important;
+  border-radius: 0 !important;
+}
+html body .comment__replies,
+html body li.comment__list-item{
+  background-color: transparent !important;
+}
 
 html body .quick-search__inputs{ background: rgba(255,255,255,0.06) !important; background-color: rgba(255,255,255,0.06) !important; border: 1px solid var(--at-border) !important; border-radius: var(--at-radius) !important; box-shadow: none !important; }
 html body .quick-search__input, html body input.quick-search__input{ background: transparent !important; background-color: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; outline: none !important; color: var(--at-text) !important; }
