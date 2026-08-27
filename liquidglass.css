@@ -2114,7 +2114,7 @@ html body .footer__section-title:has(.top-nav__site-logo)::before{
   width: 100% !important;
   max-width: 260px !important;
   aspect-ratio: 2144 / 1120 !important;
-  background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
+  background: url("https://azurebelmont.github.io/lst-css/art/lst/footer-dark.png") center / contain no-repeat !important;
 }
 
 html body .chatV2__composer > .chatV2__composerSurface{

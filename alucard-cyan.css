@@ -24,6 +24,7 @@
    --at-red           #cb3a2a    leechers / error
    ========================================================== */
 :root {
+  --quick-search-border-radius: 9px;
   --key-value-padding: 10px;
 
   
@@ -767,12 +768,13 @@ input[type="password"] {
   color: var(--at-text) !important;
   font-size: 14px !important;
 }
-.quick-search__input, input.quick-search__input {
-  border-radius: var(--quick-search-border-radius, 16px) !important;
+html body .quick-search__input,
+html body input.quick-search__input {
+  border-radius: var(--quick-search-border-radius, 9px) !important;
 }
-.quick-search:active .quick-search__input,
-.quick-search:focus-within .quick-search__input {
-  border-radius: var(--quick-search-border-radius, 16px) var(--quick-search-border-radius, 16px) 0 0 !important;
+html body .quick-search:active .quick-search__input,
+html body .quick-search:focus-within .quick-search__input {
+  border-radius: var(--quick-search-border-radius, 9px) var(--quick-search-border-radius, 9px) 0 0 !important;
 }
 .post__tip-input, .post__tip-input:focus { border: none !important; border-radius: 2px !important; }
 li.top-nav__dropdown ul li a.top-nav__username {
@@ -1843,7 +1845,7 @@ html body .footer__section-title:has(.top-nav__site-logo)::before{
   width: 100% !important;
   max-width: 260px !important;
   aspect-ratio: 2144 / 1120 !important;
-  background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
+  background: url("https://azurebelmont.github.io/lst-css/art/lst/footer-dark.png") center / contain no-repeat !important;
 }
 
 html body .chatV2__composer > .chatV2__composerSurface{
@@ -3697,7 +3699,7 @@ html body [class*="__view-btn--active"] i{
 }
 
 html body .footer__section-title:has(.top-nav__site-logo)::before{
-  background-image: url("https://lostimg.cc/zS68LyBa.png") !important;
+  background-image: url("https://azurebelmont.github.io/lst-css/art/lst/footer-light.png") !important;
 }
 
 html body a[style*="color:#f39c12"],

@@ -1227,9 +1227,9 @@ html body {
   background-color: #071a2e !important;
   background-image:
     linear-gradient(180deg, rgba(6,20,38,0.42) 0%, rgba(5,16,32,0.56) 60%, rgba(4,12,26,0.66) 100%),
-    url("https://lostimg.cc/ZUzHaojG.png") !important;
+    url("https://azurebelmont.github.io/lst-css/art/bikini-bottom/underwater.jpg") !important;
   background-size: cover, cover !important;
-  background-position: center top, center top !important;
+  background-position: center top, 30% center !important;
   background-repeat: no-repeat, no-repeat !important;
   background-attachment: fixed, fixed !important;
 }
@@ -1896,7 +1896,7 @@ html body .footer__section-title:has(.top-nav__site-logo)::before{
   width: 100% !important;
   max-width: 260px !important;
   aspect-ratio: 2144 / 1120 !important;
-  background: url("https://lostimg.cc/OVxRntGI.png") center / contain no-repeat !important;
+  background: url("https://azurebelmont.github.io/lst-css/art/lst/footer-dark.png") center / contain no-repeat !important;
 }
 
 html body .chatV2__composer > .chatV2__composerSurface{
@@ -3587,7 +3587,7 @@ html body [class*="__input"]{
 
 
 html body img[src$="/img/profile.png"]{
-  content: url("https://lostimg.cc/tPG9pIxb.png") !important;
+  content: url("https://azurebelmont.github.io/lst-css/art/bikini-bottom/duck.png") !important;
   object-fit: cover !important;
 }
 
