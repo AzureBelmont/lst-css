@@ -1448,12 +1448,6 @@ html body input.form__text:-webkit-autofill:active{
   -webkit-text-fill-color: var(--at-text) !important;
   transition: none !important;
 }
-html body .torrent-meta-bar__uploader,
-html body .torrent-badges__item,
-html body .torrent-actions__btn{
-  background-color: var(--at-bg3) !important;
-  background-image: none !important;
-}
 html body a.torrent-actions__btn.torrent-actions__btn--download,
 html body button.torrent-actions__btn.torrent-actions__btn--download{
   background-color: #560f13 !important;
@@ -3830,7 +3824,6 @@ html body .torrent-reviews__item-rating,
 html body .torrent-actions__btn,
 html body a[href*="/torrents/download/"].torrent-actions__btn.torrent-actions__btn,
 html body .torrent-actions__btn--download.torrent-actions__btn--download{
-  background: linear-gradient(color-mix(in srgb, currentColor 14%, transparent),
-                              color-mix(in srgb, currentColor 14%, transparent)),
-              var(--at-bg3) !important;
+  background-color: var(--at-bg) !important;
+  background-image: none !important;
 }
