@@ -3688,6 +3688,23 @@ html body img[src$="/img/profile.png"]{
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
 
+html body .torrent-meta-bar__time,
+html body .torrent-meta-bar__uploader,
+html body .torrent-meta-bar__age,
+html body .torrent-badges__item,
+html body .torrent-tools__btn,
+html body .torrent-section__btn,
+html body .torrent-section__action,
+html body .torrent-reviews__summary,
+html body .torrent-reviews__item-rating,
+html body .torrent-actions__btn,
+html body a[href*="/torrents/download/"].torrent-actions__btn.torrent-actions__btn,
+html body .torrent-actions__btn--download.torrent-actions__btn--download{
+  background: linear-gradient(color-mix(in srgb, currentColor 14%, transparent),
+                              color-mix(in srgb, currentColor 14%, transparent)),
+              var(--at-bg3) !important;
+}
+
 html body .panelV2.chatbox,
 html body section.panelV2.chatV2{
   background-color: rgba(13,39,66,0.55) !important;

@@ -3817,3 +3817,20 @@ html body article.chatbox-message{
 html body article.chatbox-message:nth-child(even){
   background-color: rgba(11,8,9,0.28) !important;
 }
+
+html body .torrent-meta-bar__time,
+html body .torrent-meta-bar__uploader,
+html body .torrent-meta-bar__age,
+html body .torrent-badges__item,
+html body .torrent-tools__btn,
+html body .torrent-section__btn,
+html body .torrent-section__action,
+html body .torrent-reviews__summary,
+html body .torrent-reviews__item-rating,
+html body .torrent-actions__btn,
+html body a[href*="/torrents/download/"].torrent-actions__btn.torrent-actions__btn,
+html body .torrent-actions__btn--download.torrent-actions__btn--download{
+  background: linear-gradient(color-mix(in srgb, currentColor 14%, transparent),
+                              color-mix(in srgb, currentColor 14%, transparent)),
+              var(--at-bg3) !important;
+}
