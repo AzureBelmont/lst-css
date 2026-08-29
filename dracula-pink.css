@@ -2578,13 +2578,16 @@ html body [class*="__results-count"]{
 }
 
 html body .torrent-search-row__stat--active,
-html body .torrent-search-row__stat--seeders.torrent-search-row__stat--active{
+html body .torrent-search-row__stat--seeders.torrent-search-row__stat--active,
+html body .similar-torrent-row--seeding .similar-torrent-row__stat--seeders,
+html body .similar-torrent-row__stat--seeders.similar-torrent-row__stat--active{
   background-color: rgba(48,209,88,0.15) !important;
   background-image: none !important;
   border-color: rgba(48,209,88,0.45) !important;
   color: var(--at-green) !important;
 }
-html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active{
+html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active,
+html body .similar-torrent-row__stat--leechers.similar-torrent-row__stat--active{
   background-color: rgba(255,69,58,0.15) !important;
   border-color: rgba(255,69,58,0.45) !important;
   color: var(--at-red) !important;
@@ -3454,5 +3457,9 @@ html body [class*="__input"]{
   color-scheme: dark;
 }
 
+html body header.report-show-toolbar{
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+}
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
