@@ -266,7 +266,7 @@ tr.torrent-search--list__sticky-row .torrent-search--list__name > a:first-child 
 .torrent-icons__featured { color: var(--at-accent) !important; }
 .torrent-icons__internal  { color: #baaf92 !important; }
 .torrent-icons__verified  { color: var(--at-green) !important; }
-.torrent-icons { background-color: #84848421 !important; padding: 2px 7px !important; margin-top: 2px !important; border-radius: 10px !important; display: inline-flex !important; align-items: center !important; flex-wrap: nowrap !important; gap: 6px !important; width: fit-content !important; vertical-align: middle !important; }
+.torrent-icons { background-color: var(--at-bg3) !important; padding: 2px 7px !important; margin-top: 2px !important; border-radius: 10px !important; display: inline-flex !important; align-items: center !important; flex-wrap: nowrap !important; gap: 6px !important; width: fit-content !important; vertical-align: middle !important; }
 .torrent-icons__vision { display: inline-flex !important; align-items: center !important; }
 .torrent-icons__vision img { display: inline-block !important; vertical-align: middle !important; height: 14px !important; width: auto !important; filter: invert(1) brightness(0.8) !important; }
 .torrent-search--list__resolution-and-type { background-color: transparent !important; color: var(--at-text2) !important; border: none !important; box-shadow: none !important; }
@@ -2647,13 +2647,16 @@ html body [class*="__results-count"]{
 }
 
 html body .torrent-search-row__stat--active,
-html body .torrent-search-row__stat--seeders.torrent-search-row__stat--active{
+html body .torrent-search-row__stat--seeders.torrent-search-row__stat--active,
+html body .similar-torrent-row--seeding .similar-torrent-row__stat--seeders,
+html body .similar-torrent-row__stat--seeders.similar-torrent-row__stat--active{
   background-color: rgba(48,209,88,0.15) !important;
   background-image: none !important;
   border-color: rgba(48,209,88,0.45) !important;
   color: var(--at-green) !important;
 }
-html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active{
+html body .torrent-search-row__stat--leechers.torrent-search-row__stat--active,
+html body .similar-torrent-row__stat--leechers.similar-torrent-row__stat--active{
   background-color: rgba(255,69,58,0.15) !important;
   border-color: rgba(255,69,58,0.45) !important;
   color: var(--at-red) !important;
@@ -3523,5 +3526,9 @@ html body [class*="__input"]{
   color-scheme: dark;
 }
 
+html body header.report-show-toolbar{
+  background-color: var(--at-bg2) !important;
+  background-image: none !important;
+}
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
