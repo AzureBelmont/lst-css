@@ -3692,6 +3692,9 @@ html body header.report-show-toolbar{
   background-color: var(--at-bg2) !important;
   background-image: none !important;
 }
+html body header.pm-thread__header{
+  background-color: var(--at-bg2) !important;
+}
 
 html body img[src$="/img/profile.png"]{
   content: url("https://azurebelmont.github.io/lst-css/art/bikini-bottom/duck.png") !important;

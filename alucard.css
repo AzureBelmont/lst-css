@@ -3612,6 +3612,9 @@ html body header.report-show-toolbar{
   background-color: var(--at-bg2) !important;
   background-image: none !important;
 }
+html body header.pm-thread__header{
+  background-color: var(--at-bg2) !important;
+}
 
 
 html body main [class*="__help"],
