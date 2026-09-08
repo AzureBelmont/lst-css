@@ -3509,5 +3509,8 @@ html body header.report-show-toolbar{
 html body header.pm-thread__header{
   background-color: var(--at-bg2) !important;
 }
+html body section.forum-form{
+  background-color: var(--at-bg2) !important;
+}
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }

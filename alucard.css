@@ -3614,6 +3614,9 @@ html body header.report-show-toolbar{
 html body header.pm-thread__header{
   background-color: var(--at-bg2) !important;
 }
+html body section.forum-form{
+  background-color: var(--at-bg2) !important;
+}
 
 
 html body main [class*="__help"],
