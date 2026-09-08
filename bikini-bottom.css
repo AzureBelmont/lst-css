@@ -1416,7 +1416,7 @@ html::before,
     left: 0 !important;
     width: 100% !important;
     pointer-events: none !important;
-    z-index: 0 !important;
+    z-index: -1 !important;
     background-repeat: repeat !important;
   }
 html::before{
@@ -1497,10 +1497,6 @@ html body .rating__add-rating--stars input:checked + label::after{
 }
 html body .rating__add-rating--stars:hover input:checked ~ label{
   color: rgba(250,204,21,0.42) !important;
-}
-html body main{
-  position: relative !important;
-  z-index: 1 !important;
 }
 html body .profile-sections > * {
   align-self: start !important;
@@ -1591,6 +1587,10 @@ html body .chatV2__mainPLACEHOLDER{
   overflow: hidden !important;
   position: relative !important;
   z-index: 1 !important;
+}
+
+html body .torrent-wasm-upload{
+  z-index: auto !important;
 }
 
 html body .profile-section__header,

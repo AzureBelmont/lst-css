@@ -1785,6 +1785,10 @@ html body .chatV2__mainPLACEHOLDER{
   z-index: 1 !important;
 }
 
+html body .torrent-wasm-upload{
+  z-index: auto !important;
+}
+
 html body .profile-section__header,
 html body .forum-posts__header,
 html body .torrent-comments__header,
