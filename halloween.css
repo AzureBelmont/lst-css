@@ -1641,7 +1641,19 @@ html body .torrent-search-row__name a:hover{
 }
 html body .torrent-search-row--sticky{
   background-color: var(--at-bg3) !important;
+}
+html body .torrent-search-row--sticky:not(.torrent-search-row--seeding):not(.torrent-search-row--leeching){
   border-left: 3px solid var(--at-accent) !important;
+}
+html body .torrent-search-row--seeding,
+html body .similar-torrent-row--seeding{
+  border-left: 4px solid var(--at-green) !important;
+  box-shadow: inset 10px 0 14px -10px color-mix(in srgb, var(--at-green) 55%, transparent) !important;
+}
+html body .torrent-search-row--leeching,
+html body .similar-torrent-row--leeching{
+  border-left: 4px solid #f39c12 !important;
+  box-shadow: inset 10px 0 14px -10px rgba(243,156,18,0.55) !important;
 }
 html body .torrent-search-row__poster{
   border-radius: 6px !important;
