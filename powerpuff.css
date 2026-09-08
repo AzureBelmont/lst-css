@@ -3718,6 +3718,19 @@ html body .torrent-badges__item--thanks,
 html body .torrent-badges__item--thanks i{
   color: #f87171 !important;
 }
+html body .general-prefs-panel,
+html body .general-homepage-editor,
+html body .general-prefs-subsection,
+html body .settings-section,
+html body .settings-section--danger{
+  background-color: var(--at-bg2) !important;
+  border: 1px solid var(--at-border) !important;
+  border-radius: var(--at-radius) !important;
+}
+html body .general-prefs-panel__header,
+html body .general-homepage-editor__header{
+  background-color: var(--at-bg3) !important;
+}
 
 html body .panelV2.chatbox,
 html body section.panelV2.chatV2{
