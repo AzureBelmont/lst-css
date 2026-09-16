@@ -3953,3 +3953,11 @@ html body header.pm-thread__header{
 html body section.forum-form{
   background-color: var(--at-bg2) !important;
 }
+
+html body .rank-card--complete{
+  background-color: var(--panel-bg) !important;
+  background-image: linear-gradient(90deg, rgba(22,162,73,0.10), rgba(0,0,0,0)) !important;
+}
+html body .path-header{
+  background-color: var(--panel-bg) !important;
+}

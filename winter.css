@@ -3546,3 +3546,11 @@ html body section.forum-form{
 }
 
 html body nav.top-nav{ background: var(--at-bg2) !important; background-color: var(--at-bg2) !important; box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important; }
+
+html body .rank-card--complete{
+  background-color: var(--panel-bg) !important;
+  background-image: linear-gradient(90deg, rgba(22,162,73,0.10), rgba(0,0,0,0)) !important;
+}
+html body .path-header{
+  background-color: var(--panel-bg) !important;
+}
