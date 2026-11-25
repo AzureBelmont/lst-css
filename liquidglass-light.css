@@ -1288,7 +1288,7 @@ html body .user-profile-card__meta-item-value sub,
 html body .user-profile-card__meta-item sub,
 html body .user-tag.fa-eye-slash,
 html body .user-tag.fas.fa-eye-slash,
-html body i.fa-eye-slash{ color: #1D1D1F !important; }
+html body i.fa-eye-slash:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)){ color: #1D1D1F !important; }
 html body .panel__tab,
 html body .form__label,
 html body .form__hint,
@@ -4377,4 +4377,17 @@ html body main :has(.bbcode-input--fullscreen){
 :where(.advent:not([data-plain="on"])){
   scrollbar-color: auto;
   accent-color: auto;
+}
+
+html body ::placeholder{
+  -webkit-text-fill-color: currentColor !important;
+}
+
+html body section.forum-reply .bbcode-input{
+  border-radius: 0 !important;
+  border-color: transparent !important;
+}
+html body section.forum-reply .bbcode-input:focus-within{
+  border-color: color-mix(in srgb, var(--at-accent, var(--k-accent, currentColor)) 55%, transparent) !important;
+  box-shadow: none !important;
 }

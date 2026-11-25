@@ -3565,3 +3565,16 @@ html body main :has(.bbcode-input--fullscreen){
   scrollbar-color: auto;
   accent-color: auto;
 }
+
+html body ::placeholder{
+  -webkit-text-fill-color: currentColor !important;
+}
+
+html body section.forum-reply .bbcode-input{
+  border-radius: 0 !important;
+  border-color: transparent !important;
+}
+html body section.forum-reply .bbcode-input:focus-within{
+  border-color: color-mix(in srgb, var(--at-accent, var(--k-accent, currentColor)) 55%, transparent) !important;
+  box-shadow: none !important;
+}
