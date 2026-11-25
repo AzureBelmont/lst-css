@@ -244,7 +244,7 @@ article.chatbox-message:hover { background-color: rgba(100,74,201,0.02) !importa
 .chatroom__new-message { padding-top: 4px !important; margin-top: 0 !important; }
 section.chatroom__users { background-color: var(--at-bg2) !important; }
 .panelV2.chatbox { background-color: #ece7da !important; }
-h1, h2, h3 { color: var(--at-text) !important; }
+h1:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)), h2:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)), h3:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)) { color: var(--at-text) !important; }
 .panelV2 > .panel__heading, .block__heading, [class*="section__title"], [class*="section-title"] { color: var(--at-accent) !important; }
 h1.text-gold, h2.text-gold, h3.text-gold, h4.text-gold, .text-gold:not(.fa-heartbeat) { color: var(--at-accent) !important; }
 i.fa-star.text-gold { color: var(--torrent-row-freeleech-fg, #ffb800) !important; }
@@ -336,7 +336,7 @@ li.pagination__previous--disabled:hover, li.pagination__next--disabled:hover { b
 .secondary-nav a, .secondary-nav__item { color: var(--at-text2) !important; }
 .secondary-nav a:hover, .secondary-nav__item:hover { color: var(--at-text) !important; }
 .secondary-nav__item--active, .secondary-nav a.active { color: var(--at-accent) !important; border-bottom-color: var(--at-accent) !important; }
-fieldset, .form__fieldset { border-color: rgba(31,31,31,0.12) !important; }
+fieldset:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)), .form__fieldset { border-color: rgba(31,31,31,0.12) !important; }
 fieldset.form, .form.form__fieldset, fieldset.form__fieldset { background-color: var(--at-bg2) !important; border-color: rgba(31,31,31,0.10) !important; }
 .torrent-search__filters fieldset.form__fieldset, .torrent-search__filters fieldset.form { background-color: var(--at-bg2) !important; border: 1px solid rgba(31,31,31,0.07) !important; border-radius: 6px !important; }
 .page__subtitle--index fieldset.form__fieldset, .page__subtitle--index fieldset.form { background-color: var(--at-bg2) !important; border: 1px solid rgba(31,31,31,0.07) !important; border-radius: 6px !important; }
@@ -497,10 +497,10 @@ h2.meta__heading { margin-top: 0 !important; margin-bottom: 0 !important; }
 .footer__section-title { color: var(--at-accent) !important; font-weight: 600 !important; text-transform: uppercase !important; font-size: 11px !important; letter-spacing: .1em !important; }
 .footer__copyright, .footer__stats { color: var(--at-text-dim) !important; font-size: 12px !important; }
 .footer__icons a[href*="rust-lang"] svg { filter: brightness(0) opacity(0.55) !important; }
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-track { background: var(--at-bg); }
-::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--at-accent) 50%, var(--at-bg)); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--at-accent) 75%, var(--at-bg)); }
+:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::-webkit-scrollbar { width: 5px; height: 5px; }
+:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::-webkit-scrollbar-track { background: var(--at-bg); }
+:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--at-accent) 50%, var(--at-bg)); border-radius: 3px; }
+:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--at-accent) 75%, var(--at-bg)); }
 html { scrollbar-width: thin !important; scrollbar-color: color-mix(in srgb, var(--at-accent) 50%, var(--at-bg)) var(--at-bg) !important; }
 [style*="color:#95A5A6"],[style*="color: #95A5A6"] { color: #95A5A6 !important; }
 [style*="color:#5E372F"],[style*="color: #5E372F"] { color: #5E372F !important; }
@@ -1309,7 +1309,7 @@ html body ::placeholder{
   color: var(--at-text-dim) !important;
   opacity: 1 !important;
 }
-html body dialog::backdrop{
+html body dialog:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::backdrop{
   background-color: rgba(0,0,0,0.55) !important;
 }
 :root{
@@ -1347,12 +1347,12 @@ html body main a:not([class]):not([style]){
   color: var(--at-accent) !important;
   -webkit-text-fill-color: var(--at-accent) !important;
 }
-html body main dd,
-html body main dt,
+html body main dd:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main dt:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
 html body main time,
 html body main figcaption,
 html body main b,
-html body main small,
+html body main small:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
 html body h4[class*="stat"],
 html body time[class*="datetime"],
 html body time[class*="join-date"],
@@ -3073,7 +3073,7 @@ html body ::placeholder{
   color: var(--at-text2) !important;
   opacity: 1 !important;
 }
-html body dialog::backdrop{
+html body dialog:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *))::backdrop{
   background-color: rgba(0,0,0,0.55) !important;
 }
 :root{
@@ -3639,8 +3639,8 @@ html body main [class*="__help"],
 html body main [class*="__hint"],
 html body main [class*="__description"],
 html body main [class*="__subtitle"],
-html body main [class*="__label"],
-html body main [class*="-label"],
+html body main [class*="__label"]:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main [class*="-label"]:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
 html body main [class*="__note"],
 html body main [class*="__meta"],
 html body main [class*="__caption"],
@@ -3663,19 +3663,19 @@ html body .torrent-search-row__flag-more{
   color: var(--at-text2) !important;
 }
 html body main [class*="__value"],
-html body main [class*="__count"],
-html body main [class*="__name"],
-html body main [class*="__title"]:not([class*="skeleton"]):not(.media__title){
+html body main [class*="__count"]:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main [class*="__name"]:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main [class*="__title"]:not([class*="skeleton"]):not(.media__title):where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)){
   color: var(--at-text) !important;
 }
 
-html body main dt,
-html body main dd:not([class]),
-html body main strong,
-html body main small,
-html body main span:not([class]):not([style]),
-html body main p:not([class]),
-html body main li:not([class]),
+html body main dt:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main dd:not([class]):where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main strong:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main small:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main span:not([class]):not([style]):where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main p:not([class]):where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
+html body main li:not([class]):where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)),
 html body main figcaption,
 html body main label:not([class]){
   color: var(--at-text2) !important;
@@ -3897,7 +3897,7 @@ html body tr[class*="sticky_row"] > td:first-child{
 html body :is(.form__button, .pagination__link, .panel__tab):active{
   filter: brightness(.9) !important;
 }
-html body :is(a, button, summary, [role="button"], [role="tab"]):focus-visible{
+html body :is(a, button, summary, [role="button"], [role="tab"]):focus-visible:where(:not(.advent:not([data-plain="on"]), .advent:not([data-plain="on"]) *)){
   outline: 2px solid var(--at-accent, var(--k-accent, currentColor)) !important;
   outline-offset: 2px !important;
 }
@@ -3940,4 +3940,9 @@ html body main :has(.bbcode-input [aria-expanded="true"]){
 }
 html body main :has(.bbcode-input--fullscreen){
   z-index: 1100 !important;
+}
+
+:where(.advent:not([data-plain="on"])){
+  scrollbar-color: auto;
+  accent-color: auto;
 }
