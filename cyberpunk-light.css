@@ -4129,3 +4129,9 @@ html body section.forum-reply .bbcode-input:focus-within{
   border-color: color-mix(in srgb, var(--at-accent, var(--k-accent, currentColor)) 55%, transparent) !important;
   box-shadow: none !important;
 }
+
+html body .advent[data-plain="on"]{
+  --body-fg: var(--at-text, var(--k-text, #ccc));
+  --ui-muted-fg: var(--at-text2, var(--k-text2, #999));
+  --ui-info-fg: var(--at-accent, var(--k-accent, #58a6ff));
+}
